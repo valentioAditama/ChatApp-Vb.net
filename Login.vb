@@ -39,7 +39,7 @@ Public Class Login
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
         connection = New MySqlConnection()
-        connection.ConnectionString = "server=localhosst;user id=rooast; password=;database=chatapp;"
+        connection.ConnectionString = "server=localhost;user id=root; password=;database=chatapp;"
         Try
             connection.Open()
             MessageBox.Show("Database berhasil di sambungkan")
