@@ -28,9 +28,10 @@ Partial Class Login
         Me.TxtxboxEmail = New System.Windows.Forms.TextBox()
         Me.txtboxPassword = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.forgotPassword = New System.Windows.Forms.LinkLabel()
+        Me.btnForgotpassword = New System.Windows.Forms.LinkLabel()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btnRegister = New System.Windows.Forms.Button()
+        Me.linktoform = New System.Windows.Forms.LinkLabel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -42,7 +43,7 @@ Partial Class Login
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Candara", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(973, 58)
+        Me.Label1.Location = New System.Drawing.Point(973, 128)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(102, 40)
         Me.Label1.TabIndex = 5
@@ -94,16 +95,16 @@ Partial Class Login
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "Password"
         '
-        'forgotPassword
+        'btnForgotpassword
         '
-        Me.forgotPassword.AutoSize = True
-        Me.forgotPassword.Font = New System.Drawing.Font("Candara", 10.2!)
-        Me.forgotPassword.Location = New System.Drawing.Point(1136, 342)
-        Me.forgotPassword.Name = "forgotPassword"
-        Me.forgotPassword.Size = New System.Drawing.Size(132, 21)
-        Me.forgotPassword.TabIndex = 11
-        Me.forgotPassword.TabStop = True
-        Me.forgotPassword.Text = "Forgot Password"
+        Me.btnForgotpassword.AutoSize = True
+        Me.btnForgotpassword.Font = New System.Drawing.Font("Candara", 10.2!)
+        Me.btnForgotpassword.Location = New System.Drawing.Point(1136, 342)
+        Me.btnForgotpassword.Name = "btnForgotpassword"
+        Me.btnForgotpassword.Size = New System.Drawing.Size(132, 21)
+        Me.btnForgotpassword.TabIndex = 11
+        Me.btnForgotpassword.TabStop = True
+        Me.btnForgotpassword.Text = "Forgot Password"
         '
         'Button1
         '
@@ -115,7 +116,7 @@ Partial Class Login
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Font = New System.Drawing.Font("Bahnschrift", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button1.Location = New System.Drawing.Point(904, 383)
+        Me.Button1.Location = New System.Drawing.Point(904, 424)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(261, 59)
         Me.Button1.TabIndex = 12
@@ -133,13 +134,24 @@ Partial Class Login
         Me.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnRegister.Font = New System.Drawing.Font("Bahnschrift", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRegister.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnRegister.Location = New System.Drawing.Point(946, 448)
+        Me.btnRegister.Location = New System.Drawing.Point(946, 489)
         Me.btnRegister.Name = "btnRegister"
         Me.btnRegister.Size = New System.Drawing.Size(187, 50)
         Me.btnRegister.TabIndex = 13
         Me.btnRegister.Text = "Register"
         Me.btnRegister.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.btnRegister.UseVisualStyleBackColor = False
+        '
+        'linktoform
+        '
+        Me.linktoform.AutoSize = True
+        Me.linktoform.Font = New System.Drawing.Font("Candara", 10.2!)
+        Me.linktoform.Location = New System.Drawing.Point(1136, 376)
+        Me.linktoform.Name = "linktoform"
+        Me.linktoform.Size = New System.Drawing.Size(72, 21)
+        Me.linktoform.TabIndex = 14
+        Me.linktoform.TabStop = True
+        Me.linktoform.Text = "Kembali "
         '
         'PictureBox1
         '
@@ -158,9 +170,10 @@ Partial Class Login
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.ClientSize = New System.Drawing.Size(1329, 630)
+        Me.Controls.Add(Me.linktoform)
         Me.Controls.Add(Me.btnRegister)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.forgotPassword)
+        Me.Controls.Add(Me.btnForgotpassword)
         Me.Controls.Add(Me.txtboxPassword)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.TxtxboxEmail)
@@ -183,7 +196,8 @@ Partial Class Login
     Friend WithEvents TxtxboxEmail As TextBox
     Friend WithEvents txtboxPassword As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents forgotPassword As LinkLabel
+    Friend WithEvents btnForgotpassword As LinkLabel
     Friend WithEvents Button1 As Button
     Friend WithEvents btnRegister As Button
+    Friend WithEvents linktoform As LinkLabel
 End Class

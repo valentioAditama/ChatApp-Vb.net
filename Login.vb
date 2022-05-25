@@ -1,4 +1,7 @@
-﻿Public Class Login
+﻿Imports MySql.Data.MySqlClient
+Public Class Login
+
+    Dim connection As MySqlConnection
     Private Sub txtboxPassword_TextChanged(sender As Object, e As EventArgs) Handles txtboxPassword.TextChanged
         txtboxPassword.PasswordChar = "*"
     End Sub
@@ -22,5 +25,29 @@
     Private Sub Register_Click_3(sender As Object, e As EventArgs) Handles btnRegister.Click
         Register.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub forgotPassword_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles btnForgotpassword.LinkClicked
+        ForgotPassword.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub linktoform_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles linktoform.LinkClicked
+        Form1.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+        connection = New MySqlConnection()
+        connection.ConnectionString = "server=localhosst;user id=rooast; password=;database=chatapp;"
+        Try
+            connection.Open()
+            MessageBox.Show("Database berhasil di sambungkan")
+            connection.Close()
+        Catch sqlerror As MySqlException
+            MessageBox.Show("Database gagal di sambungkan" & sqlerror.Message)
+        Finally
+            connection.Dispose()
+        End Try
     End Sub
 End Class
