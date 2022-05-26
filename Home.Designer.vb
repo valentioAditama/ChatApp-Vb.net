@@ -30,7 +30,7 @@ Partial Class Home
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.Label1.Location = New System.Drawing.Point(543, 99)
+        Me.Label1.Location = New System.Drawing.Point(566, 125)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(120, 29)
         Me.Label1.TabIndex = 0
