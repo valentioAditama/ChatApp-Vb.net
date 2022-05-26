@@ -95,6 +95,7 @@
     <Compile Include="Home.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Koneksi.vb" />
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>
