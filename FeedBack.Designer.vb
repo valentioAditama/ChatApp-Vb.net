@@ -29,12 +29,12 @@ Partial Class FeedBack
         Me.btnstars1 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TxtxboxEmail = New System.Windows.Forms.TextBox()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TxtboxFullname = New System.Windows.Forms.TextBox()
+        Me.RdbuttonBugs = New System.Windows.Forms.RadioButton()
+        Me.RdbuttonComment = New System.Windows.Forms.RadioButton()
+        Me.RdbuttonOther = New System.Windows.Forms.RadioButton()
+        Me.BtnSubmit = New System.Windows.Forms.Button()
+        Me.TxtBoxIssue = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -67,13 +67,13 @@ Partial Class FeedBack
         Me.SplitContainer1.Panel2.Controls.Add(Me.Button2)
         Me.SplitContainer1.Panel2.Controls.Add(Me.Button1)
         Me.SplitContainer1.Panel2.Controls.Add(Me.LinkLabel1)
-        Me.SplitContainer1.Panel2.Controls.Add(Me.TextBox1)
+        Me.SplitContainer1.Panel2.Controls.Add(Me.TxtBoxIssue)
         Me.SplitContainer1.Panel2.Controls.Add(Me.Label5)
-        Me.SplitContainer1.Panel2.Controls.Add(Me.Button5)
-        Me.SplitContainer1.Panel2.Controls.Add(Me.RadioButton3)
-        Me.SplitContainer1.Panel2.Controls.Add(Me.RadioButton2)
-        Me.SplitContainer1.Panel2.Controls.Add(Me.RadioButton1)
-        Me.SplitContainer1.Panel2.Controls.Add(Me.TxtxboxEmail)
+        Me.SplitContainer1.Panel2.Controls.Add(Me.BtnSubmit)
+        Me.SplitContainer1.Panel2.Controls.Add(Me.RdbuttonOther)
+        Me.SplitContainer1.Panel2.Controls.Add(Me.RdbuttonComment)
+        Me.SplitContainer1.Panel2.Controls.Add(Me.RdbuttonBugs)
+        Me.SplitContainer1.Panel2.Controls.Add(Me.TxtboxFullname)
         Me.SplitContainer1.Panel2.Controls.Add(Me.Label4)
         Me.SplitContainer1.Panel2.Controls.Add(Me.Label3)
         Me.SplitContainer1.Panel2.Controls.Add(Me.btnstars1)
@@ -150,86 +150,86 @@ Partial Class FeedBack
         Me.Label4.TabIndex = 20
         Me.Label4.Text = "Fullname"
         '
-        'TxtxboxEmail
+        'TxtboxFullname
         '
-        Me.TxtxboxEmail.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.TxtboxFullname.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TxtxboxEmail.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TxtxboxEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.TxtxboxEmail.ForeColor = System.Drawing.SystemColors.InfoText
-        Me.TxtxboxEmail.Location = New System.Drawing.Point(155, 272)
-        Me.TxtxboxEmail.Name = "TxtxboxEmail"
-        Me.TxtxboxEmail.Size = New System.Drawing.Size(623, 36)
-        Me.TxtxboxEmail.TabIndex = 21
+        Me.TxtboxFullname.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.TxtboxFullname.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
+        Me.TxtboxFullname.ForeColor = System.Drawing.SystemColors.InfoText
+        Me.TxtboxFullname.Location = New System.Drawing.Point(155, 272)
+        Me.TxtboxFullname.Name = "TxtboxFullname"
+        Me.TxtboxFullname.Size = New System.Drawing.Size(623, 36)
+        Me.TxtboxFullname.TabIndex = 21
         '
-        'RadioButton1
+        'RdbuttonBugs
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.RadioButton1.Location = New System.Drawing.Point(156, 412)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(61, 21)
-        Me.RadioButton1.TabIndex = 22
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Bugs"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.RdbuttonBugs.AutoSize = True
+        Me.RdbuttonBugs.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.RdbuttonBugs.Location = New System.Drawing.Point(156, 412)
+        Me.RdbuttonBugs.Name = "RdbuttonBugs"
+        Me.RdbuttonBugs.Size = New System.Drawing.Size(61, 21)
+        Me.RdbuttonBugs.TabIndex = 22
+        Me.RdbuttonBugs.TabStop = True
+        Me.RdbuttonBugs.Text = "Bugs"
+        Me.RdbuttonBugs.UseVisualStyleBackColor = True
         '
-        'RadioButton2
+        'RdbuttonComment
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.RadioButton2.Location = New System.Drawing.Point(255, 412)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(86, 21)
-        Me.RadioButton2.TabIndex = 23
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "comment"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.RdbuttonComment.AutoSize = True
+        Me.RdbuttonComment.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.RdbuttonComment.Location = New System.Drawing.Point(255, 412)
+        Me.RdbuttonComment.Name = "RdbuttonComment"
+        Me.RdbuttonComment.Size = New System.Drawing.Size(86, 21)
+        Me.RdbuttonComment.TabIndex = 23
+        Me.RdbuttonComment.TabStop = True
+        Me.RdbuttonComment.Text = "comment"
+        Me.RdbuttonComment.UseVisualStyleBackColor = True
         '
-        'RadioButton3
+        'RdbuttonOther
         '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.RadioButton3.Location = New System.Drawing.Point(382, 412)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(65, 21)
-        Me.RadioButton3.TabIndex = 24
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "Other"
-        Me.RadioButton3.UseVisualStyleBackColor = True
+        Me.RdbuttonOther.AutoSize = True
+        Me.RdbuttonOther.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.RdbuttonOther.Location = New System.Drawing.Point(382, 412)
+        Me.RdbuttonOther.Name = "RdbuttonOther"
+        Me.RdbuttonOther.Size = New System.Drawing.Size(65, 21)
+        Me.RdbuttonOther.TabIndex = 24
+        Me.RdbuttonOther.TabStop = True
+        Me.RdbuttonOther.Text = "Other"
+        Me.RdbuttonOther.UseVisualStyleBackColor = True
         '
-        'Button5
+        'BtnSubmit
         '
-        Me.Button5.AccessibleRole = System.Windows.Forms.AccessibleRole.ButtonMenu
-        Me.Button5.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.BtnSubmit.AccessibleRole = System.Windows.Forms.AccessibleRole.ButtonMenu
+        Me.BtnSubmit.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(92, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.Button5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button5.Font = New System.Drawing.Font("Bahnschrift", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button5.Location = New System.Drawing.Point(156, 476)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(622, 59)
-        Me.Button5.TabIndex = 25
-        Me.Button5.Text = "Submit"
-        Me.Button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.Button5.UseVisualStyleBackColor = False
+        Me.BtnSubmit.BackColor = System.Drawing.Color.FromArgb(CType(CType(92, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.BtnSubmit.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BtnSubmit.Font = New System.Drawing.Font("Bahnschrift", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnSubmit.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnSubmit.Location = New System.Drawing.Point(156, 476)
+        Me.BtnSubmit.Name = "BtnSubmit"
+        Me.BtnSubmit.Size = New System.Drawing.Size(622, 59)
+        Me.BtnSubmit.TabIndex = 25
+        Me.BtnSubmit.Text = "Submit"
+        Me.BtnSubmit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.BtnSubmit.UseVisualStyleBackColor = False
         '
-        'TextBox1
+        'TxtBoxIssue
         '
-        Me.TextBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.TxtBoxIssue.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.TextBox1.ForeColor = System.Drawing.SystemColors.InfoText
-        Me.TextBox1.Location = New System.Drawing.Point(155, 365)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(623, 36)
-        Me.TextBox1.TabIndex = 27
+        Me.TxtBoxIssue.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.TxtBoxIssue.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
+        Me.TxtBoxIssue.ForeColor = System.Drawing.SystemColors.InfoText
+        Me.TxtBoxIssue.Location = New System.Drawing.Point(155, 365)
+        Me.TxtBoxIssue.Name = "TxtBoxIssue"
+        Me.TxtBoxIssue.Size = New System.Drawing.Size(623, 36)
+        Me.TxtBoxIssue.TabIndex = 27
         '
         'Label5
         '
@@ -370,13 +370,13 @@ Partial Class FeedBack
     Friend WithEvents Label3 As Label
     Friend WithEvents btnstars1 As Button
     Friend WithEvents Label4 As Label
-    Friend WithEvents RadioButton3 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents TxtxboxEmail As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents RdbuttonOther As RadioButton
+    Friend WithEvents RdbuttonComment As RadioButton
+    Friend WithEvents RdbuttonBugs As RadioButton
+    Friend WithEvents TxtboxFullname As TextBox
+    Friend WithEvents TxtBoxIssue As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents Button5 As Button
+    Friend WithEvents BtnSubmit As Button
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
