@@ -3,7 +3,7 @@ Public Class Login
 
     Dim connection As MySqlConnection
     Private Sub txtboxPassword_TextChanged(sender As Object, e As EventArgs) Handles txtboxPassword.TextChanged
-        txtboxPassword.PasswordChar = "*"
+        ' txtboxPassword.PasswordChar = "*"
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.MouseEnter
@@ -38,6 +38,36 @@ Public Class Login
     End Sub
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
-        Call Koneksi.koneksi()
+        If TxtxboxEmail.Text = "" Or txtboxPassword.Text = "" Then
+            MsgBox("field tidak boleh kosong")
+        End If
+        Try
+            Dim email, pass As String
+            email = TxtxboxEmail.Text
+            pass = txtboxPassword.Text
+            Dim dt As DataTable = func_login(email, pass)
+            If dt.Rows.Count > 0 Then
+                MsgBox("berhasil login!", vbInformation)
+                Me.Dispose()
+                Home.Show()
+                Me.Hide()
+            Else
+                MsgBox("Invalid email dan password", vbCritical)
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message, vbInformation)
+        End Try
+    End Sub
+
+    Private Sub ShowPassword_CheckedChanged(sender As Object, e As EventArgs) Handles ShowPassword.CheckedChanged
+        If ShowPassword.CheckState = CheckState.Checked Then
+            txtboxPassword.UseSystemPasswordChar = False
+        Else
+            txtboxPassword.UseSystemPasswordChar = True
+        End If
+    End Sub
+
+    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        txtboxPassword.UseSystemPasswordChar = True
     End Sub
 End Class

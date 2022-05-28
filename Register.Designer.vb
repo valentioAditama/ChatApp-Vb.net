@@ -34,6 +34,7 @@ Partial Class Register
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtboxUsername = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.ShowPassword = New System.Windows.Forms.CheckBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -45,10 +46,11 @@ Partial Class Register
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnRegister.BackColor = System.Drawing.Color.FromArgb(CType(CType(92, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.btnRegister.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnRegister.Font = New System.Drawing.Font("Bahnschrift", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRegister.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnRegister.Location = New System.Drawing.Point(174, 459)
+        Me.btnRegister.Location = New System.Drawing.Point(174, 495)
         Me.btnRegister.Name = "btnRegister"
         Me.btnRegister.Size = New System.Drawing.Size(261, 59)
         Me.btnRegister.TabIndex = 29
@@ -59,8 +61,9 @@ Partial Class Register
         'haveAccount
         '
         Me.haveAccount.AutoSize = True
+        Me.haveAccount.Cursor = System.Windows.Forms.Cursors.Hand
         Me.haveAccount.Font = New System.Drawing.Font("Candara", 10.2!)
-        Me.haveAccount.Location = New System.Drawing.Point(402, 424)
+        Me.haveAccount.Location = New System.Drawing.Point(402, 460)
         Me.haveAccount.Name = "haveAccount"
         Me.haveAccount.Size = New System.Drawing.Size(120, 21)
         Me.haveAccount.TabIndex = 28
@@ -84,6 +87,7 @@ Partial Class Register
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Candara Light", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Label3.Location = New System.Drawing.Point(81, 359)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(151, 40)
@@ -107,6 +111,7 @@ Partial Class Register
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Candara Light", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Label2.Location = New System.Drawing.Point(81, 176)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(143, 40)
@@ -120,6 +125,7 @@ Partial Class Register
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Candara", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Label1.Location = New System.Drawing.Point(242, 81)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(136, 40)
@@ -143,6 +149,7 @@ Partial Class Register
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Candara Light", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Label4.Location = New System.Drawing.Point(81, 237)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(90, 40)
@@ -166,11 +173,25 @@ Partial Class Register
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Candara Light", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Label5.Location = New System.Drawing.Point(81, 296)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(160, 40)
         Me.Label5.TabIndex = 32
         Me.Label5.Text = "Username"
+        '
+        'ShowPassword
+        '
+        Me.ShowPassword.AutoSize = True
+        Me.ShowPassword.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ShowPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.ShowPassword.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.ShowPassword.Location = New System.Drawing.Point(274, 407)
+        Me.ShowPassword.Name = "ShowPassword"
+        Me.ShowPassword.Size = New System.Drawing.Size(151, 24)
+        Me.ShowPassword.TabIndex = 34
+        Me.ShowPassword.Text = "Show Password"
+        Me.ShowPassword.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
@@ -189,6 +210,7 @@ Partial Class Register
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ClientSize = New System.Drawing.Size(1329, 630)
+        Me.Controls.Add(Me.ShowPassword)
         Me.Controls.Add(Me.txtboxUsername)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.txtboxEmail)
@@ -223,4 +245,5 @@ Partial Class Register
     Friend WithEvents Label4 As Label
     Friend WithEvents txtboxUsername As TextBox
     Friend WithEvents Label5 As Label
+    Friend WithEvents ShowPassword As CheckBox
 End Class

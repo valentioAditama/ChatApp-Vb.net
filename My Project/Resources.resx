@@ -118,11 +118,62 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="49755-blue-chat-animation-from-drawkit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\49755-blue-chat-animation-from-drawkit.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="chat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="38435-register" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\38435-register.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="94132-forgot-password1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\94132-forgot-password1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yogi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yogi.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="99680-3-dots-loading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\99680-3-dots-loading.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="94132-forgot-password" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\94132-forgot-password.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="105918-forgot-password" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\105918-forgot-password.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="49755-blue-chat-animation-from-drawkit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\49755-blue-chat-animation-from-drawkit.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shutdown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shutdown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="valen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\valen.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rijaldi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rijaldi.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="442008112_GLANCING_AVATAR_3D_400px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\442008112_GLANCING_AVATAR_3D_400px.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="feedback" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\feedback.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="99740-line-loading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\99740-line-loading.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="125121366_199575011611527_3867949827102708230_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\125121366_199575011611527_3867949827102708230_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="about" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\about.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="syarif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syarif.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="27649-lets-chat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\27649-lets-chat.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,7 +181,13 @@
   <data name="63599-balaton-wave-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\63599-balaton-wave-2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="105918-forgot-password" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\105918-forgot-password.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="97952-loading-animation-blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\97952-loading-animation-blue.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shandy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shandy.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="41111-man-filling-a-survey-with-a-woman-watching-at-5-star-feedback-dialog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\41111-man-filling-a-survey-with-a-woman-watching-at-5-star-feedback-dialog.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
