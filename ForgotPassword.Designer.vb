@@ -41,15 +41,16 @@ Partial Class ForgotPassword
         Me.txtboxEmail.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtboxEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
         Me.txtboxEmail.ForeColor = System.Drawing.SystemColors.InfoText
-        Me.txtboxEmail.Location = New System.Drawing.Point(233, 253)
+        Me.txtboxEmail.Location = New System.Drawing.Point(214, 253)
         Me.txtboxEmail.Name = "txtboxEmail"
-        Me.txtboxEmail.Size = New System.Drawing.Size(248, 36)
+        Me.txtboxEmail.Size = New System.Drawing.Size(267, 36)
         Me.txtboxEmail.TabIndex = 43
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Candara Light", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Label4.Location = New System.Drawing.Point(69, 249)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(90, 40)
@@ -63,6 +64,7 @@ Partial Class ForgotPassword
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnRegister.BackColor = System.Drawing.Color.FromArgb(CType(CType(92, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.btnRegister.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnRegister.Font = New System.Drawing.Font("Bahnschrift", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRegister.ForeColor = System.Drawing.SystemColors.ButtonHighlight
@@ -77,6 +79,7 @@ Partial Class ForgotPassword
         'haveAccount
         '
         Me.haveAccount.AutoSize = True
+        Me.haveAccount.Cursor = System.Windows.Forms.Cursors.Hand
         Me.haveAccount.Font = New System.Drawing.Font("Candara", 10.2!)
         Me.haveAccount.Location = New System.Drawing.Point(369, 307)
         Me.haveAccount.Name = "haveAccount"
@@ -92,6 +95,7 @@ Partial Class ForgotPassword
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Candara", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Label1.Location = New System.Drawing.Point(156, 81)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(256, 40)
@@ -102,6 +106,7 @@ Partial Class ForgotPassword
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Candara Light", 13.0!)
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Label2.Location = New System.Drawing.Point(191, 121)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(174, 27)
@@ -111,7 +116,7 @@ Partial Class ForgotPassword
         'PictureBox1
         '
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.PictureBox1.Image = Global.ChatApp.My.Resources.Resources._105918_forgot_password
+        Me.PictureBox1.Image = Global.ChatApp.My.Resources.Resources._94132_forgot_password1
         Me.PictureBox1.Location = New System.Drawing.Point(634, 0)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(695, 630)
