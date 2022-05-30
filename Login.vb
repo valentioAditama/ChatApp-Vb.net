@@ -38,17 +38,22 @@ Public Class Login
     End Sub
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
-        If TxtxboxEmail.Text = "" Or txtboxPassword.Text = "" Then
+        If TxtxboxUsername.Text = "" Or txtboxPassword.Text = "" Then
             MsgBox("field tidak boleh kosong")
         End If
         Try
-            Dim email, pass As String
-            email = TxtxboxEmail.Text
+            Dim username, pass As String
+            username = TxtxboxUsername.Text
             pass = txtboxPassword.Text
-            Dim dt As DataTable = func_login(email, pass)
+            Dim dt As DataTable = func_login(username, pass)
             If dt.Rows.Count > 0 Then
                 MsgBox("berhasil login!", vbInformation)
                 Me.Dispose()
+                Home.Label1.Text = username
+                Home.TxtboxListName.Text = "- " + username
+                EditProfile.TxtxboxUsername.Text = username
+                EditProfile.TxtxboxPassword.Text = pass
+                Home.TxtboxIsiMessage.Text = username + " Connected to Server" + vbNewLine
                 Home.Show()
                 Me.Hide()
             Else

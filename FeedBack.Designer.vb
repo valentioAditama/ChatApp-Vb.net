@@ -24,24 +24,18 @@ Partial Class FeedBack
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FeedBack))
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.btnstars1 = New System.Windows.Forms.Button()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.TxtboxFullname = New System.Windows.Forms.TextBox()
-        Me.RdbuttonBugs = New System.Windows.Forms.RadioButton()
-        Me.RdbuttonComment = New System.Windows.Forms.RadioButton()
-        Me.RdbuttonOther = New System.Windows.Forms.RadioButton()
-        Me.BtnSubmit = New System.Windows.Forms.Button()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.TxtBoxIssue = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.BtnSubmit = New System.Windows.Forms.Button()
+        Me.RdbuttonOther = New System.Windows.Forms.RadioButton()
+        Me.RdbuttonComment = New System.Windows.Forms.RadioButton()
+        Me.RdbuttonBugs = New System.Windows.Forms.RadioButton()
+        Me.TxtboxFullname = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
@@ -62,10 +56,6 @@ Partial Class FeedBack
         '
         'SplitContainer1.Panel2
         '
-        Me.SplitContainer1.Panel2.Controls.Add(Me.Button4)
-        Me.SplitContainer1.Panel2.Controls.Add(Me.Button3)
-        Me.SplitContainer1.Panel2.Controls.Add(Me.Button2)
-        Me.SplitContainer1.Panel2.Controls.Add(Me.Button1)
         Me.SplitContainer1.Panel2.Controls.Add(Me.LinkLabel1)
         Me.SplitContainer1.Panel2.Controls.Add(Me.TxtBoxIssue)
         Me.SplitContainer1.Panel2.Controls.Add(Me.Label5)
@@ -75,13 +65,21 @@ Partial Class FeedBack
         Me.SplitContainer1.Panel2.Controls.Add(Me.RdbuttonBugs)
         Me.SplitContainer1.Panel2.Controls.Add(Me.TxtboxFullname)
         Me.SplitContainer1.Panel2.Controls.Add(Me.Label4)
-        Me.SplitContainer1.Panel2.Controls.Add(Me.Label3)
-        Me.SplitContainer1.Panel2.Controls.Add(Me.btnstars1)
         Me.SplitContainer1.Panel2.Controls.Add(Me.Label2)
-        Me.SplitContainer1.Panel2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.SplitContainer1.Panel2.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.SplitContainer1.Size = New System.Drawing.Size(1329, 630)
         Me.SplitContainer1.SplitterDistance = 443
         Me.SplitContainer1.TabIndex = 0
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.ChatApp.My.Resources.Resources._41111_man_filling_a_survey_with_a_woman_watching_at_5_star_feedback_dialog
+        Me.PictureBox1.Location = New System.Drawing.Point(-221, 1)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(879, 627)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
         '
         'Label1
         '
@@ -95,109 +93,42 @@ Partial Class FeedBack
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Share Your FeedBack"
         '
-        'Label2
+        'LinkLabel1
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label2.Font = New System.Drawing.Font("Arial", 20.0!)
-        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label2.Location = New System.Drawing.Point(258, 58)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(339, 39)
-        Me.Label2.TabIndex = 4
-        Me.Label2.Text = "Share Your FeedBack"
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.LinkLabel1.Location = New System.Drawing.Point(695, 422)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(83, 25)
+        Me.LinkLabel1.TabIndex = 28
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "Kembali"
         '
-        'btnstars1
+        'TxtBoxIssue
         '
-        Me.btnstars1.AccessibleRole = System.Windows.Forms.AccessibleRole.ButtonMenu
-        Me.btnstars1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.TxtBoxIssue.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnstars1.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.btnstars1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnstars1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnstars1.Font = New System.Drawing.Font("Bahnschrift", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnstars1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.btnstars1.Location = New System.Drawing.Point(155, 178)
-        Me.btnstars1.Name = "btnstars1"
-        Me.btnstars1.Size = New System.Drawing.Size(94, 36)
-        Me.btnstars1.TabIndex = 14
-        Me.btnstars1.Text = "★"
-        Me.btnstars1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.btnstars1.UseVisualStyleBackColor = False
+        Me.TxtBoxIssue.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.TxtBoxIssue.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
+        Me.TxtBoxIssue.ForeColor = System.Drawing.SystemColors.InfoText
+        Me.TxtBoxIssue.Location = New System.Drawing.Point(155, 343)
+        Me.TxtBoxIssue.Name = "TxtBoxIssue"
+        Me.TxtBoxIssue.Size = New System.Drawing.Size(623, 36)
+        Me.TxtBoxIssue.TabIndex = 27
         '
-        'Label3
+        'Label5
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label3.Font = New System.Drawing.Font("Calibri Light", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label3.Location = New System.Drawing.Point(149, 135)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(219, 31)
-        Me.Label3.TabIndex = 19
-        Me.Label3.Text = "Please Select a Stars"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label4.Font = New System.Drawing.Font("Calibri Light", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label4.Location = New System.Drawing.Point(149, 238)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(108, 31)
-        Me.Label4.TabIndex = 20
-        Me.Label4.Text = "Fullname"
-        '
-        'TxtboxFullname
-        '
-        Me.TxtboxFullname.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TxtboxFullname.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TxtboxFullname.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.TxtboxFullname.ForeColor = System.Drawing.SystemColors.InfoText
-        Me.TxtboxFullname.Location = New System.Drawing.Point(155, 272)
-        Me.TxtboxFullname.Name = "TxtboxFullname"
-        Me.TxtboxFullname.Size = New System.Drawing.Size(623, 36)
-        Me.TxtboxFullname.TabIndex = 21
-        '
-        'RdbuttonBugs
-        '
-        Me.RdbuttonBugs.AutoSize = True
-        Me.RdbuttonBugs.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.RdbuttonBugs.Location = New System.Drawing.Point(156, 412)
-        Me.RdbuttonBugs.Name = "RdbuttonBugs"
-        Me.RdbuttonBugs.Size = New System.Drawing.Size(61, 21)
-        Me.RdbuttonBugs.TabIndex = 22
-        Me.RdbuttonBugs.TabStop = True
-        Me.RdbuttonBugs.Text = "Bugs"
-        Me.RdbuttonBugs.UseVisualStyleBackColor = True
-        '
-        'RdbuttonComment
-        '
-        Me.RdbuttonComment.AutoSize = True
-        Me.RdbuttonComment.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.RdbuttonComment.Location = New System.Drawing.Point(255, 412)
-        Me.RdbuttonComment.Name = "RdbuttonComment"
-        Me.RdbuttonComment.Size = New System.Drawing.Size(86, 21)
-        Me.RdbuttonComment.TabIndex = 23
-        Me.RdbuttonComment.TabStop = True
-        Me.RdbuttonComment.Text = "comment"
-        Me.RdbuttonComment.UseVisualStyleBackColor = True
-        '
-        'RdbuttonOther
-        '
-        Me.RdbuttonOther.AutoSize = True
-        Me.RdbuttonOther.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.RdbuttonOther.Location = New System.Drawing.Point(382, 412)
-        Me.RdbuttonOther.Name = "RdbuttonOther"
-        Me.RdbuttonOther.Size = New System.Drawing.Size(65, 21)
-        Me.RdbuttonOther.TabIndex = 24
-        Me.RdbuttonOther.TabStop = True
-        Me.RdbuttonOther.Text = "Other"
-        Me.RdbuttonOther.UseVisualStyleBackColor = True
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label5.Font = New System.Drawing.Font("Calibri Light", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label5.Location = New System.Drawing.Point(149, 309)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(298, 31)
+        Me.Label5.TabIndex = 26
+        Me.Label5.Text = "Describe your issue or ideas"
         '
         'BtnSubmit
         '
@@ -210,7 +141,7 @@ Partial Class FeedBack
         Me.BtnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BtnSubmit.Font = New System.Drawing.Font("Bahnschrift", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnSubmit.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.BtnSubmit.Location = New System.Drawing.Point(156, 476)
+        Me.BtnSubmit.Location = New System.Drawing.Point(156, 454)
         Me.BtnSubmit.Name = "BtnSubmit"
         Me.BtnSubmit.Size = New System.Drawing.Size(622, 59)
         Me.BtnSubmit.TabIndex = 25
@@ -218,128 +149,78 @@ Partial Class FeedBack
         Me.BtnSubmit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.BtnSubmit.UseVisualStyleBackColor = False
         '
-        'TxtBoxIssue
+        'RdbuttonOther
         '
-        Me.TxtBoxIssue.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.RdbuttonOther.AutoSize = True
+        Me.RdbuttonOther.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.RdbuttonOther.Location = New System.Drawing.Point(382, 390)
+        Me.RdbuttonOther.Name = "RdbuttonOther"
+        Me.RdbuttonOther.Size = New System.Drawing.Size(65, 21)
+        Me.RdbuttonOther.TabIndex = 24
+        Me.RdbuttonOther.TabStop = True
+        Me.RdbuttonOther.Text = "Other"
+        Me.RdbuttonOther.UseVisualStyleBackColor = True
+        '
+        'RdbuttonComment
+        '
+        Me.RdbuttonComment.AutoSize = True
+        Me.RdbuttonComment.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.RdbuttonComment.Location = New System.Drawing.Point(255, 390)
+        Me.RdbuttonComment.Name = "RdbuttonComment"
+        Me.RdbuttonComment.Size = New System.Drawing.Size(86, 21)
+        Me.RdbuttonComment.TabIndex = 23
+        Me.RdbuttonComment.TabStop = True
+        Me.RdbuttonComment.Text = "comment"
+        Me.RdbuttonComment.UseVisualStyleBackColor = True
+        '
+        'RdbuttonBugs
+        '
+        Me.RdbuttonBugs.AutoSize = True
+        Me.RdbuttonBugs.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.RdbuttonBugs.Location = New System.Drawing.Point(156, 390)
+        Me.RdbuttonBugs.Name = "RdbuttonBugs"
+        Me.RdbuttonBugs.Size = New System.Drawing.Size(61, 21)
+        Me.RdbuttonBugs.TabIndex = 22
+        Me.RdbuttonBugs.TabStop = True
+        Me.RdbuttonBugs.Text = "Bugs"
+        Me.RdbuttonBugs.UseVisualStyleBackColor = True
+        '
+        'TxtboxFullname
+        '
+        Me.TxtboxFullname.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TxtBoxIssue.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TxtBoxIssue.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.TxtBoxIssue.ForeColor = System.Drawing.SystemColors.InfoText
-        Me.TxtBoxIssue.Location = New System.Drawing.Point(155, 365)
-        Me.TxtBoxIssue.Name = "TxtBoxIssue"
-        Me.TxtBoxIssue.Size = New System.Drawing.Size(623, 36)
-        Me.TxtBoxIssue.TabIndex = 27
+        Me.TxtboxFullname.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.TxtboxFullname.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
+        Me.TxtboxFullname.ForeColor = System.Drawing.SystemColors.InfoText
+        Me.TxtboxFullname.Location = New System.Drawing.Point(155, 250)
+        Me.TxtboxFullname.Name = "TxtboxFullname"
+        Me.TxtboxFullname.Size = New System.Drawing.Size(623, 36)
+        Me.TxtboxFullname.TabIndex = 21
         '
-        'Label5
+        'Label4
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label5.Font = New System.Drawing.Font("Calibri Light", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label5.Location = New System.Drawing.Point(149, 331)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(298, 31)
-        Me.Label5.TabIndex = 26
-        Me.Label5.Text = "Describe your issue or ideas"
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label4.Font = New System.Drawing.Font("Calibri Light", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label4.Location = New System.Drawing.Point(149, 216)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(108, 31)
+        Me.Label4.TabIndex = 20
+        Me.Label4.Text = "Fullname"
         '
-        'LinkLabel1
+        'Label2
         '
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.LinkLabel1.Location = New System.Drawing.Point(695, 444)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(83, 25)
-        Me.LinkLabel1.TabIndex = 28
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "Kembali"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.ChatApp.My.Resources.Resources._41111_man_filling_a_survey_with_a_woman_watching_at_5_star_feedback_dialog
-        Me.PictureBox1.Location = New System.Drawing.Point(-221, 1)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(879, 627)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
-        'Button1
-        '
-        Me.Button1.AccessibleRole = System.Windows.Forms.AccessibleRole.ButtonMenu
-        Me.Button1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button1.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button1.Font = New System.Drawing.Font("Bahnschrift", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Button1.Location = New System.Drawing.Point(270, 178)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(94, 36)
-        Me.Button1.TabIndex = 29
-        Me.Button1.Text = "★★"
-        Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'Button2
-        '
-        Me.Button2.AccessibleRole = System.Windows.Forms.AccessibleRole.ButtonMenu
-        Me.Button2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button2.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button2.Font = New System.Drawing.Font("Bahnschrift", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Button2.Location = New System.Drawing.Point(386, 178)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(94, 36)
-        Me.Button2.TabIndex = 30
-        Me.Button2.Text = "★★★"
-        Me.Button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.Button2.UseVisualStyleBackColor = False
-        '
-        'Button3
-        '
-        Me.Button3.AccessibleRole = System.Windows.Forms.AccessibleRole.ButtonMenu
-        Me.Button3.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button3.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Button3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button3.Font = New System.Drawing.Font("Bahnschrift", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Button3.Location = New System.Drawing.Point(503, 178)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(94, 36)
-        Me.Button3.TabIndex = 31
-        Me.Button3.Text = "★★★★"
-        Me.Button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.Button3.UseVisualStyleBackColor = False
-        '
-        'Button4
-        '
-        Me.Button4.AccessibleRole = System.Windows.Forms.AccessibleRole.ButtonMenu
-        Me.Button4.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button4.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Button4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button4.Font = New System.Drawing.Font("Bahnschrift", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Button4.Location = New System.Drawing.Point(617, 178)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(94, 36)
-        Me.Button4.TabIndex = 32
-        Me.Button4.Text = "★★★★★"
-        Me.Button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label2.Font = New System.Drawing.Font("Arial", 20.0!)
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label2.Location = New System.Drawing.Point(287, 123)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(339, 39)
+        Me.Label2.TabIndex = 4
+        Me.Label2.Text = "Share Your FeedBack"
         '
         'FeedBack
         '
@@ -367,8 +248,6 @@ Partial Class FeedBack
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents btnstars1 As Button
     Friend WithEvents Label4 As Label
     Friend WithEvents RdbuttonOther As RadioButton
     Friend WithEvents RdbuttonComment As RadioButton
@@ -378,8 +257,4 @@ Partial Class FeedBack
     Friend WithEvents Label5 As Label
     Friend WithEvents BtnSubmit As Button
     Friend WithEvents LinkLabel1 As LinkLabel
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
 End Class

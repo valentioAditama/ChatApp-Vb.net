@@ -25,7 +25,7 @@ Partial Class Login
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TxtxboxEmail = New System.Windows.Forms.TextBox()
+        Me.TxtxboxUsername = New System.Windows.Forms.TextBox()
         Me.txtboxPassword = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnForgotpassword = New System.Windows.Forms.LinkLabel()
@@ -58,22 +58,22 @@ Partial Class Login
         Me.Label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Label2.Location = New System.Drawing.Point(787, 173)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(90, 40)
+        Me.Label2.Size = New System.Drawing.Size(160, 40)
         Me.Label2.TabIndex = 6
-        Me.Label2.Text = "Email"
+        Me.Label2.Text = "Username"
         '
-        'TxtxboxEmail
+        'TxtxboxUsername
         '
-        Me.TxtxboxEmail.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.TxtxboxUsername.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TxtxboxEmail.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TxtxboxEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.TxtxboxEmail.ForeColor = System.Drawing.SystemColors.InfoText
-        Me.TxtxboxEmail.Location = New System.Drawing.Point(980, 177)
-        Me.TxtxboxEmail.Name = "TxtxboxEmail"
-        Me.TxtxboxEmail.Size = New System.Drawing.Size(248, 36)
-        Me.TxtxboxEmail.TabIndex = 7
+        Me.TxtxboxUsername.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.TxtxboxUsername.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
+        Me.TxtxboxUsername.ForeColor = System.Drawing.SystemColors.InfoText
+        Me.TxtxboxUsername.Location = New System.Drawing.Point(980, 177)
+        Me.TxtxboxUsername.Name = "TxtxboxUsername"
+        Me.TxtxboxUsername.Size = New System.Drawing.Size(248, 36)
+        Me.TxtxboxUsername.TabIndex = 7
         '
         'txtboxPassword
         '
@@ -196,7 +196,7 @@ Partial Class Login
         Me.Controls.Add(Me.btnForgotpassword)
         Me.Controls.Add(Me.txtboxPassword)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TxtxboxEmail)
+        Me.Controls.Add(Me.TxtxboxUsername)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
@@ -213,7 +213,7 @@ Partial Class Login
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents TxtxboxEmail As TextBox
+    Friend WithEvents TxtxboxUsername As TextBox
     Friend WithEvents txtboxPassword As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents btnForgotpassword As LinkLabel
