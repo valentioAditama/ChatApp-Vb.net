@@ -10,6 +10,14 @@ Module Module_Koneksi
         End If
     End Sub
 
+    Public Function func_showMessage(room As String, username As String, message As String)
+        connect()
+        Dim cmd As New MySqlCommand("SELECT * FROM `chat` WHERE room = @1;")
+        With cmd
+            .Parameters.AddWithValue("@1", room)
+        End With
+    End Function
+
     Public Function func_login(username As String, password As String)
         connect()
         Dim cmd As New MySqlCommand("SELECT * from `users` where username = @1 and password = @2", connection)

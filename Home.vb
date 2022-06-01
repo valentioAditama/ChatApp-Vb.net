@@ -2,6 +2,7 @@
 Imports FireSharp.Response
 Imports FireSharp.Interfaces
 Imports Newtonsoft.Json
+Imports MySql.Data.MySqlClient
 
 Public Class Home
 
@@ -54,6 +55,7 @@ Public Class Home
     End Sub
 
     Private Sub BtnSendMessage_Click(sender As Object, e As EventArgs) Handles BtnSendMessage.Click
+
         If TxtboxMessage.Text = "" Then
             MsgBox("Field text tidak boleh Kosong")
         Else
