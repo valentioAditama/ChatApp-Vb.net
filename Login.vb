@@ -49,12 +49,12 @@ Public Class Login
             If dt.Rows.Count > 0 Then
                 MsgBox("berhasil login!", vbInformation)
                 Me.Dispose()
+                Home.Show()
                 Home.Label1.Text = username
                 Home.TxtboxListName.Text = "- " + username
                 EditProfile.TxtxboxUsername.Text = username
                 EditProfile.TxtxboxPassword.Text = pass
                 Home.TxtboxIsiMessage.Text = username + " Connected to Server" + vbNewLine
-                Home.Show()
                 Me.Hide()
             Else
                 MsgBox("Invalid email dan password", vbCritical)

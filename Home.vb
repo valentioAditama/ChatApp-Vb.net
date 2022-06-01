@@ -54,21 +54,14 @@ Public Class Home
     End Sub
 
     Private Sub BtnSendMessage_Click(sender As Object, e As EventArgs) Handles BtnSendMessage.Click
-        Dim chat As New Chat() With
-            {
-            .message = TxtboxMessage.Text,
-            .sedder = Label1.Text
-            }
-        Dim setter = client.Set("Messages/" + "1", chat)
-        TxtboxIsiMessage.Text += TxtboxMessage.Text + vbNewLine
-        TxtboxMessage.Text = ""
-
-        Dim res = client.Get("Messages/1")
-        'Dim chat As New Chat()
-        chat = res.ResultAs(Of Chat)
-        TxtboxIsiMessage.Text = chat.message
-        'TxtboxIsiMessage.Text += chat.sedder
-        Livecall()
+        If TxtboxMessage.Text = "" Then
+            MsgBox("Field text tidak boleh Kosong")
+        Else
+            Dim room As String = "1"
+            Dim time As Date
+            func_SendMessage(room, Label1.Text, TxtboxMessage.Text, time)
+            TxtboxMessage.Text = ""
+        End If
     End Sub
 
     Private Async Sub Livecall()
@@ -80,10 +73,9 @@ Public Class Home
         End While
     End Sub
 
-
     Private Sub UpdateRTB(ByVal records As Dictionary(Of String, String))
         TxtboxIsiMessage.Text = ""
-        TxtboxIsiMessage.Text += records.ElementAt(0).Key & " -- " + records.ElementAt(0).Value & vbLf
+        TxtboxIsiMessage.Text += records.ElementAt(1).Value & ": " + records.ElementAt(0).Value & vbLf
     End Sub
 
 End Class

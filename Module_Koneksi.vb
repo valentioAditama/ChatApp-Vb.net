@@ -62,4 +62,17 @@ Module Module_Koneksi
         Return True
     End Function
 
+    Public Function func_SendMessage(room As String, username As String, message As String, created_at As String)
+        connect()
+        Dim cmd As New MySqlCommand("INSERT INTO `chat`(`room`, `username`, `message`, `created_at`) VALUES (@1, @2, @3, @4)", connection)
+        With cmd
+            .Parameters.AddWithValue("@1", room)
+            .Parameters.AddWithValue("@2", username)
+            .Parameters.AddWithValue("@3", message)
+            .Parameters.AddWithValue("@4", created_at)
+            .ExecuteNonQuery()
+        End With
+        Return True
+    End Function
+
 End Module

@@ -28,13 +28,9 @@ Partial Class Home
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnEditProfile = New System.Windows.Forms.Label()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.TxtboxListName = New System.Windows.Forms.RichTextBox()
@@ -42,18 +38,22 @@ Partial Class Home
         Me.TxtboxIsiMessage = New System.Windows.Forms.RichTextBox()
         Me.BtnSendMessage = New System.Windows.Forms.Button()
         Me.TxtboxMessage = New System.Windows.Forms.TextBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox2.SuspendLayout()
-        Me.GroupBox4.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
         'SplitContainer1
@@ -129,17 +129,6 @@ Partial Class Home
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Logout"
         '
-        'PictureBox4
-        '
-        Me.PictureBox4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox4.Image = Global.ChatApp.My.Resources.Resources.about
-        Me.PictureBox4.Location = New System.Drawing.Point(57, 380)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(70, 75)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox4.TabIndex = 17
-        Me.PictureBox4.TabStop = False
-        '
         'Label7
         '
         Me.Label7.AutoSize = True
@@ -151,17 +140,6 @@ Partial Class Home
         Me.Label7.Size = New System.Drawing.Size(125, 29)
         Me.Label7.TabIndex = 16
         Me.Label7.Text = "About Us"
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox3.Image = Global.ChatApp.My.Resources.Resources.edit
-        Me.PictureBox3.Location = New System.Drawing.Point(57, 264)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(70, 75)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox3.TabIndex = 15
-        Me.PictureBox3.TabStop = False
         '
         'Label1
         '
@@ -184,27 +162,6 @@ Partial Class Home
         Me.btnEditProfile.Size = New System.Drawing.Size(148, 29)
         Me.btnEditProfile.TabIndex = 13
         Me.btnEditProfile.Text = "Edit Profile"
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox2.Image = Global.ChatApp.My.Resources.Resources.feedback
-        Me.PictureBox2.Location = New System.Drawing.Point(57, 493)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(70, 75)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 12
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.ChatApp.My.Resources.Resources._442008112_GLANCING_AVATAR_3D_400px
-        Me.PictureBox1.Location = New System.Drawing.Point(55, 35)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(322, 149)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 10
-        Me.PictureBox1.TabStop = False
         '
         'GroupBox2
         '
@@ -287,6 +244,49 @@ Partial Class Home
         Me.TxtboxMessage.Size = New System.Drawing.Size(744, 36)
         Me.TxtboxMessage.TabIndex = 29
         '
+        'PictureBox4
+        '
+        Me.PictureBox4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox4.Image = Global.ChatApp.My.Resources.Resources.about
+        Me.PictureBox4.Location = New System.Drawing.Point(57, 380)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(70, 75)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox4.TabIndex = 17
+        Me.PictureBox4.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox3.Image = Global.ChatApp.My.Resources.Resources.edit
+        Me.PictureBox3.Location = New System.Drawing.Point(57, 264)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(70, 75)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox3.TabIndex = 15
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox2.Image = Global.ChatApp.My.Resources.Resources.feedback
+        Me.PictureBox2.Location = New System.Drawing.Point(57, 493)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(70, 75)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 12
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.ChatApp.My.Resources.Resources._442008112_GLANCING_AVATAR_3D_400px
+        Me.PictureBox1.Location = New System.Drawing.Point(55, 35)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(322, 149)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 10
+        Me.PictureBox1.TabStop = False
+        '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -304,14 +304,14 @@ Partial Class Home
         Me.SplitContainer1.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox3.ResumeLayout(False)
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
