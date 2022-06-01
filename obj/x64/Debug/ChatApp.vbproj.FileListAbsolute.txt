@@ -32,3 +32,17 @@ C:\Users\user\source\repos\ChatApp-Vb.net\obj\x64\Debug\ChatApp.Loading.resource
 C:\Users\user\source\repos\ChatApp-Vb.net\obj\x64\Debug\ChatApp.AboutUs.resources
 C:\Users\user\source\repos\ChatApp-Vb.net\obj\x64\Debug\ChatApp.FeedBack.resources
 C:\Users\user\source\repos\ChatApp-Vb.net\obj\x64\Debug\ChatApp.EditProfile.resources
+C:\Users\user\source\repos\ChatApp-Vb.net\bin\x64\Debug\FireSharp.dll
+C:\Users\user\source\repos\ChatApp-Vb.net\bin\x64\Debug\Microsoft.Threading.Tasks.dll
+C:\Users\user\source\repos\ChatApp-Vb.net\bin\x64\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\user\source\repos\ChatApp-Vb.net\bin\x64\Debug\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\user\source\repos\ChatApp-Vb.net\bin\x64\Debug\Newtonsoft.Json.dll
+C:\Users\user\source\repos\ChatApp-Vb.net\bin\x64\Debug\System.Net.Http.Extensions.dll
+C:\Users\user\source\repos\ChatApp-Vb.net\bin\x64\Debug\System.Net.Http.Primitives.dll
+C:\Users\user\source\repos\ChatApp-Vb.net\bin\x64\Debug\Microsoft.Threading.Tasks.xml
+C:\Users\user\source\repos\ChatApp-Vb.net\bin\x64\Debug\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\user\source\repos\ChatApp-Vb.net\bin\x64\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\user\source\repos\ChatApp-Vb.net\bin\x64\Debug\Newtonsoft.Json.xml
+C:\Users\user\source\repos\ChatApp-Vb.net\bin\x64\Debug\System.Net.Http.Extensions.xml
+C:\Users\user\source\repos\ChatApp-Vb.net\bin\x64\Debug\System.Net.Http.Primitives.xml
+C:\Users\user\source\repos\ChatApp-Vb.net\obj\x64\Debug\ChatApp.vbproj.App.config

@@ -28,18 +28,21 @@ Partial Class EditProfile
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.TxtxboxFullname = New System.Windows.Forms.TextBox()
         Me.TxtxboxEmail = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TxtxboxUsername = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TxtxboxPassword = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.TxtBoxBio = New System.Windows.Forms.RichTextBox()
+        Me.ShowPassword = New System.Windows.Forms.CheckBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -105,6 +108,19 @@ Partial Class EditProfile
         Me.Label3.TabIndex = 27
         Me.Label3.Text = "Fullname "
         '
+        'TxtxboxFullname
+        '
+        Me.TxtxboxFullname.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TxtxboxFullname.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.TxtxboxFullname.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
+        Me.TxtxboxFullname.ForeColor = System.Drawing.SystemColors.InfoText
+        Me.TxtxboxFullname.Location = New System.Drawing.Point(433, 173)
+        Me.TxtxboxFullname.Name = "TxtxboxFullname"
+        Me.TxtxboxFullname.Size = New System.Drawing.Size(328, 36)
+        Me.TxtxboxFullname.TabIndex = 28
+        '
         'TxtxboxEmail
         '
         Me.TxtxboxEmail.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -113,23 +129,10 @@ Partial Class EditProfile
         Me.TxtxboxEmail.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.TxtxboxEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
         Me.TxtxboxEmail.ForeColor = System.Drawing.SystemColors.InfoText
-        Me.TxtxboxEmail.Location = New System.Drawing.Point(433, 173)
+        Me.TxtxboxEmail.Location = New System.Drawing.Point(864, 173)
         Me.TxtxboxEmail.Name = "TxtxboxEmail"
         Me.TxtxboxEmail.Size = New System.Drawing.Size(328, 36)
-        Me.TxtxboxEmail.TabIndex = 28
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.TextBox1.ForeColor = System.Drawing.SystemColors.InfoText
-        Me.TextBox1.Location = New System.Drawing.Point(864, 173)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(328, 36)
-        Me.TextBox1.TabIndex = 30
+        Me.TxtxboxEmail.TabIndex = 30
         '
         'Label4
         '
@@ -142,18 +145,18 @@ Partial Class EditProfile
         Me.Label4.TabIndex = 29
         Me.Label4.Text = "Email "
         '
-        'TextBox2
+        'TxtxboxUsername
         '
-        Me.TextBox2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.TxtxboxUsername.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.TextBox2.ForeColor = System.Drawing.SystemColors.InfoText
-        Me.TextBox2.Location = New System.Drawing.Point(433, 269)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(328, 36)
-        Me.TextBox2.TabIndex = 32
+        Me.TxtxboxUsername.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.TxtxboxUsername.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
+        Me.TxtxboxUsername.ForeColor = System.Drawing.SystemColors.InfoText
+        Me.TxtxboxUsername.Location = New System.Drawing.Point(433, 269)
+        Me.TxtxboxUsername.Name = "TxtxboxUsername"
+        Me.TxtxboxUsername.Size = New System.Drawing.Size(328, 36)
+        Me.TxtxboxUsername.TabIndex = 32
         '
         'Label5
         '
@@ -166,18 +169,18 @@ Partial Class EditProfile
         Me.Label5.TabIndex = 31
         Me.Label5.Text = "Username"
         '
-        'TextBox3
+        'TxtxboxPassword
         '
-        Me.TextBox3.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.TxtxboxPassword.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.TextBox3.ForeColor = System.Drawing.SystemColors.InfoText
-        Me.TextBox3.Location = New System.Drawing.Point(864, 269)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(328, 36)
-        Me.TextBox3.TabIndex = 34
+        Me.TxtxboxPassword.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.TxtxboxPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
+        Me.TxtxboxPassword.ForeColor = System.Drawing.SystemColors.InfoText
+        Me.TxtxboxPassword.Location = New System.Drawing.Point(864, 269)
+        Me.TxtxboxPassword.Name = "TxtxboxPassword"
+        Me.TxtxboxPassword.Size = New System.Drawing.Size(328, 36)
+        Me.TxtxboxPassword.TabIndex = 34
         '
         'Label6
         '
@@ -189,19 +192,6 @@ Partial Class EditProfile
         Me.Label6.Size = New System.Drawing.Size(108, 26)
         Me.Label6.TabIndex = 33
         Me.Label6.Text = "Password"
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox4.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.TextBox4.ForeColor = System.Drawing.SystemColors.InfoText
-        Me.TextBox4.Location = New System.Drawing.Point(433, 366)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(759, 36)
-        Me.TextBox4.TabIndex = 36
         '
         'Label7
         '
@@ -225,7 +215,7 @@ Partial Class EditProfile
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Font = New System.Drawing.Font("Bahnschrift", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button1.Location = New System.Drawing.Point(433, 429)
+        Me.Button1.Location = New System.Drawing.Point(433, 524)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(135, 45)
         Me.Button1.TabIndex = 37
@@ -244,7 +234,7 @@ Partial Class EditProfile
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button2.Font = New System.Drawing.Font("Bahnschrift", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button2.Location = New System.Drawing.Point(598, 429)
+        Me.Button2.Location = New System.Drawing.Point(598, 524)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(163, 45)
         Me.Button2.TabIndex = 38
@@ -252,23 +242,54 @@ Partial Class EditProfile
         Me.Button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.Button2.UseVisualStyleBackColor = False
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.TxtBoxBio)
+        Me.GroupBox1.Location = New System.Drawing.Point(433, 366)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(759, 140)
+        Me.GroupBox1.TabIndex = 39
+        Me.GroupBox1.TabStop = False
+        '
+        'TxtBoxBio
+        '
+        Me.TxtBoxBio.Location = New System.Drawing.Point(0, 12)
+        Me.TxtBoxBio.Name = "TxtBoxBio"
+        Me.TxtBoxBio.Size = New System.Drawing.Size(759, 125)
+        Me.TxtBoxBio.TabIndex = 0
+        Me.TxtBoxBio.Text = ""
+        '
+        'ShowPassword
+        '
+        Me.ShowPassword.AutoSize = True
+        Me.ShowPassword.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ShowPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.ShowPassword.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.ShowPassword.Location = New System.Drawing.Point(864, 311)
+        Me.ShowPassword.Name = "ShowPassword"
+        Me.ShowPassword.Size = New System.Drawing.Size(151, 24)
+        Me.ShowPassword.TabIndex = 40
+        Me.ShowPassword.Text = "Show Password"
+        Me.ShowPassword.UseVisualStyleBackColor = True
+        '
         'EditProfile
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.ClientSize = New System.Drawing.Size(1329, 630)
+        Me.Controls.Add(Me.ShowPassword)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.TxtxboxPassword)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.TxtxboxUsername)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.TxtxboxEmail)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.TxtxboxFullname)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.PictureBox1)
@@ -279,6 +300,7 @@ Partial Class EditProfile
         Me.Name = "EditProfile"
         Me.Text = "Edit Profile"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -289,15 +311,17 @@ Partial Class EditProfile
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Button5 As Button
     Friend WithEvents Label3 As Label
+    Friend WithEvents TxtxboxFullname As TextBox
     Friend WithEvents TxtxboxEmail As TextBox
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TxtxboxUsername As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents TxtxboxPassword As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox4 As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents TxtBoxBio As RichTextBox
+    Friend WithEvents ShowPassword As CheckBox
 End Class

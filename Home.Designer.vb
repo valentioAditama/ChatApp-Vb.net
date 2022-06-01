@@ -25,35 +25,35 @@ Partial Class Home
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Home))
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.btnEditProfile = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnEditProfile = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.TxtboxListName = New System.Windows.Forms.RichTextBox()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.TxtboxIsiMessage = New System.Windows.Forms.RichTextBox()
+        Me.BtnSendMessage = New System.Windows.Forms.Button()
+        Me.TxtboxMessage = New System.Windows.Forms.TextBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.TxtxboxEmail = New System.Windows.Forms.TextBox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
-        Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox3.SuspendLayout()
-        Me.GroupBox4.SuspendLayout()
         Me.SuspendLayout()
         '
         'SplitContainer1
@@ -95,50 +95,16 @@ Partial Class Home
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Profile Information"
         '
-        'btnEditProfile
+        'Label2
         '
-        Me.btnEditProfile.AutoSize = True
-        Me.btnEditProfile.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnEditProfile.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEditProfile.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.btnEditProfile.Location = New System.Drawing.Point(145, 290)
-        Me.btnEditProfile.Name = "btnEditProfile"
-        Me.btnEditProfile.Size = New System.Drawing.Size(148, 29)
-        Me.btnEditProfile.TabIndex = 13
-        Me.btnEditProfile.Text = "Edit Profile"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.Label1.Location = New System.Drawing.Point(116, 170)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(206, 29)
-        Me.Label1.TabIndex = 14
-        Me.Label1.Text = "Valentio Aditama"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label7.Location = New System.Drawing.Point(145, 406)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(125, 29)
-        Me.Label7.TabIndex = 16
-        Me.Label7.Text = "About Us"
-        '
-        'LinkLabel1
-        '
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.LinkLabel1.Location = New System.Drawing.Point(168, 199)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(90, 29)
-        Me.LinkLabel1.TabIndex = 18
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "Logout"
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.Label2.Location = New System.Drawing.Point(144, 601)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(136, 20)
+        Me.Label2.TabIndex = 20
+        Me.Label2.Text = "© 2022 ChatApp "
         '
         'Label3
         '
@@ -152,12 +118,57 @@ Partial Class Home
         Me.Label3.TabIndex = 19
         Me.Label3.Text = "FeedBack"
         '
+        'LinkLabel1
+        '
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.LinkLabel1.Location = New System.Drawing.Point(168, 199)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(90, 29)
+        Me.LinkLabel1.TabIndex = 18
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "Logout"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label7.Location = New System.Drawing.Point(145, 406)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(125, 29)
+        Me.Label7.TabIndex = 16
+        Me.Label7.Text = "About Us"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.Label1.Location = New System.Drawing.Point(116, 170)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(206, 29)
+        Me.Label1.TabIndex = 14
+        Me.Label1.Text = "Valentio Aditama"
+        '
+        'btnEditProfile
+        '
+        Me.btnEditProfile.AutoSize = True
+        Me.btnEditProfile.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnEditProfile.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEditProfile.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.btnEditProfile.Location = New System.Drawing.Point(145, 290)
+        Me.btnEditProfile.Name = "btnEditProfile"
+        Me.btnEditProfile.Size = New System.Drawing.Size(148, 29)
+        Me.btnEditProfile.TabIndex = 13
+        Me.btnEditProfile.Text = "Edit Profile"
+        '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.GroupBox4)
         Me.GroupBox2.Controls.Add(Me.GroupBox3)
-        Me.GroupBox2.Controls.Add(Me.Button2)
-        Me.GroupBox2.Controls.Add(Me.TxtxboxEmail)
+        Me.GroupBox2.Controls.Add(Me.BtnSendMessage)
+        Me.GroupBox2.Controls.Add(Me.TxtboxMessage)
         Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
         Me.GroupBox2.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.GroupBox2.Location = New System.Drawing.Point(3, 3)
@@ -167,16 +178,71 @@ Partial Class Home
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Chat"
         '
-        'Label2
+        'GroupBox4
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.Label2.Location = New System.Drawing.Point(144, 601)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(136, 20)
-        Me.Label2.TabIndex = 20
-        Me.Label2.Text = "© 2022 ChatApp "
+        Me.GroupBox4.Controls.Add(Me.TxtboxListName)
+        Me.GroupBox4.Location = New System.Drawing.Point(653, 24)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(220, 541)
+        Me.GroupBox4.TabIndex = 41
+        Me.GroupBox4.TabStop = False
+        '
+        'TxtboxListName
+        '
+        Me.TxtboxListName.Location = New System.Drawing.Point(6, 11)
+        Me.TxtboxListName.Name = "TxtboxListName"
+        Me.TxtboxListName.Size = New System.Drawing.Size(214, 530)
+        Me.TxtboxListName.TabIndex = 0
+        Me.TxtboxListName.Text = ""
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.TxtboxIsiMessage)
+        Me.GroupBox3.Location = New System.Drawing.Point(6, 24)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(641, 541)
+        Me.GroupBox3.TabIndex = 40
+        Me.GroupBox3.TabStop = False
+        '
+        'TxtboxIsiMessage
+        '
+        Me.TxtboxIsiMessage.Location = New System.Drawing.Point(0, 11)
+        Me.TxtboxIsiMessage.Name = "TxtboxIsiMessage"
+        Me.TxtboxIsiMessage.Size = New System.Drawing.Size(641, 527)
+        Me.TxtboxIsiMessage.TabIndex = 0
+        Me.TxtboxIsiMessage.Text = ""
+        '
+        'BtnSendMessage
+        '
+        Me.BtnSendMessage.AccessibleRole = System.Windows.Forms.AccessibleRole.ButtonMenu
+        Me.BtnSendMessage.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnSendMessage.BackColor = System.Drawing.Color.Silver
+        Me.BtnSendMessage.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnSendMessage.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BtnSendMessage.Font = New System.Drawing.Font("Bahnschrift", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnSendMessage.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.BtnSendMessage.Location = New System.Drawing.Point(756, 579)
+        Me.BtnSendMessage.Name = "BtnSendMessage"
+        Me.BtnSendMessage.Size = New System.Drawing.Size(111, 36)
+        Me.BtnSendMessage.TabIndex = 39
+        Me.BtnSendMessage.Text = "Send"
+        Me.BtnSendMessage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.BtnSendMessage.UseVisualStyleBackColor = False
+        '
+        'TxtboxMessage
+        '
+        Me.TxtboxMessage.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TxtboxMessage.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.TxtboxMessage.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
+        Me.TxtboxMessage.ForeColor = System.Drawing.SystemColors.InfoText
+        Me.TxtboxMessage.Location = New System.Drawing.Point(6, 579)
+        Me.TxtboxMessage.Name = "TxtboxMessage"
+        Me.TxtboxMessage.Size = New System.Drawing.Size(744, 36)
+        Me.TxtboxMessage.TabIndex = 29
         '
         'PictureBox4
         '
@@ -221,72 +287,6 @@ Partial Class Home
         Me.PictureBox1.TabIndex = 10
         Me.PictureBox1.TabStop = False
         '
-        'TxtxboxEmail
-        '
-        Me.TxtxboxEmail.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TxtxboxEmail.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TxtxboxEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.TxtxboxEmail.ForeColor = System.Drawing.SystemColors.InfoText
-        Me.TxtxboxEmail.Location = New System.Drawing.Point(6, 579)
-        Me.TxtxboxEmail.Name = "TxtxboxEmail"
-        Me.TxtxboxEmail.Size = New System.Drawing.Size(744, 36)
-        Me.TxtxboxEmail.TabIndex = 29
-        '
-        'Button2
-        '
-        Me.Button2.AccessibleRole = System.Windows.Forms.AccessibleRole.ButtonMenu
-        Me.Button2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button2.BackColor = System.Drawing.Color.Silver
-        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button2.Font = New System.Drawing.Font("Bahnschrift", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Button2.Location = New System.Drawing.Point(756, 579)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(111, 36)
-        Me.Button2.TabIndex = 39
-        Me.Button2.Text = "Send"
-        Me.Button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.Button2.UseVisualStyleBackColor = False
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.Controls.Add(Me.RichTextBox1)
-        Me.GroupBox3.Location = New System.Drawing.Point(6, 24)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(641, 541)
-        Me.GroupBox3.TabIndex = 40
-        Me.GroupBox3.TabStop = False
-        '
-        'GroupBox4
-        '
-        Me.GroupBox4.Controls.Add(Me.RichTextBox2)
-        Me.GroupBox4.Location = New System.Drawing.Point(653, 24)
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(220, 541)
-        Me.GroupBox4.TabIndex = 41
-        Me.GroupBox4.TabStop = False
-        '
-        'RichTextBox1
-        '
-        Me.RichTextBox1.Location = New System.Drawing.Point(0, 11)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(641, 527)
-        Me.RichTextBox1.TabIndex = 0
-        Me.RichTextBox1.Text = ""
-        '
-        'RichTextBox2
-        '
-        Me.RichTextBox2.Location = New System.Drawing.Point(6, 11)
-        Me.RichTextBox2.Name = "RichTextBox2"
-        Me.RichTextBox2.Size = New System.Drawing.Size(214, 530)
-        Me.RichTextBox2.TabIndex = 0
-        Me.RichTextBox2.Text = ""
-        '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -306,12 +306,12 @@ Partial Class Home
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox3.ResumeLayout(False)
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox4.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -329,10 +329,10 @@ Partial Class Home
     Friend WithEvents Label3 As Label
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents TxtxboxEmail As TextBox
+    Friend WithEvents TxtboxMessage As TextBox
     Friend WithEvents GroupBox4 As GroupBox
     Friend WithEvents GroupBox3 As GroupBox
-    Friend WithEvents Button2 As Button
-    Friend WithEvents RichTextBox2 As RichTextBox
-    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents BtnSendMessage As Button
+    Friend WithEvents TxtboxListName As RichTextBox
+    Friend WithEvents TxtboxIsiMessage As RichTextBox
 End Class
