@@ -198,6 +198,12 @@
     <Compile Include="Register.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Theme.Designer.vb">
+      <DependentUpon>Theme.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Theme.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AboutUs.resx">
@@ -232,6 +238,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Theme.resx">
+      <DependentUpon>Theme.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
