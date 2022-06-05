@@ -80,4 +80,8 @@ Public Class Home
         TxtboxIsiMessage.Text += records.ElementAt(1).Value & ": " + records.ElementAt(0).Value & vbLf
     End Sub
 
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+        Theme.Show()
+        Me.Hide()
+    End Sub
 End Class
