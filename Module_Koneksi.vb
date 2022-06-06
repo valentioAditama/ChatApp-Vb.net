@@ -12,9 +12,12 @@ Module Module_Koneksi
 
     Public Function func_showMessage(room As String, username As String, message As String)
         connect()
-        Dim cmd As New MySqlCommand("SELECT * FROM `chat` WHERE room = @1;")
+        Dim cmd As New MySqlCommand("SELECT * FROM `chat` WHERE room = @1 ORDER BY id DESC LIMIT 1", connection)
         With cmd
             .Parameters.AddWithValue("@1", room)
+            Dim dt As New DataTable
+            Dim dr As MySqlDataReader = cmd.ExecuteReader
+            Dim result = Home.TxtboxIsiMessage.DataBindings.Add("chat", dt, "room")
         End With
     End Function
 

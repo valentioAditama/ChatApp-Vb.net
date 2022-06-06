@@ -189,11 +189,12 @@ Partial Class Home
         '
         'TxtboxListName
         '
+        Me.TxtboxListName.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
         Me.TxtboxListName.Location = New System.Drawing.Point(6, 11)
         Me.TxtboxListName.Name = "TxtboxListName"
         Me.TxtboxListName.Size = New System.Drawing.Size(214, 530)
         Me.TxtboxListName.TabIndex = 0
-        Me.TxtboxListName.Text = ""
+        Me.TxtboxListName.Text = "- Valentio Aditama"
         '
         'GroupBox3
         '
@@ -206,11 +207,12 @@ Partial Class Home
         '
         'TxtboxIsiMessage
         '
+        Me.TxtboxIsiMessage.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.TxtboxIsiMessage.Location = New System.Drawing.Point(0, 11)
         Me.TxtboxIsiMessage.Name = "TxtboxIsiMessage"
         Me.TxtboxIsiMessage.Size = New System.Drawing.Size(641, 527)
         Me.TxtboxIsiMessage.TabIndex = 0
-        Me.TxtboxIsiMessage.Text = ""
+        Me.TxtboxIsiMessage.Text = "Valentio aditama : hai gais"
         '
         'BtnSendMessage
         '

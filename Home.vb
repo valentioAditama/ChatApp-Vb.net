@@ -14,11 +14,7 @@ Public Class Home
 
     Private client As IFirebaseClient
     Private Sub Home_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Try
-            client = New FireSharp.FirebaseClient(fcon)
-        Catch
-            MessageBox.Show("Ada kendala pada Koneksi atau jaringan")
-        End Try
+
     End Sub
 
     Private Sub editProfile_Click(sender As Object, e As EventArgs)
@@ -55,29 +51,48 @@ Public Class Home
     End Sub
 
     Private Sub BtnSendMessage_Click(sender As Object, e As EventArgs) Handles BtnSendMessage.Click
-
         If TxtboxMessage.Text = "" Then
             MsgBox("Field text tidak boleh Kosong")
         Else
+
+            Dim connection As New MySqlConnection("Datasource=localhost;port=3306;username=root;password=;database=chatapp")
+            connection.Open()
+
             Dim room As String = "1"
             Dim time As Date
+
             func_SendMessage(room, Label1.Text, TxtboxMessage.Text, time)
+
+            Dim cmd As New MySqlCommand("SELECT * FROM chat WHERE room = @1 ORDER BY id DESC LIMIT 1", connection)
+
+            cmd.Parameters.AddWithValue("@1", room)
+
+            Dim myReader As MySqlDataReader = cmd.ExecuteReader()
+
+            While myReader.Read
+                TxtboxIsiMessage.Text += myReader.GetValue(3).ToString() + vbNewLine
+            End While
+
             TxtboxMessage.Text = ""
+
+            connection.Close()
+
+            Livecall()
         End If
     End Sub
 
     Private Async Sub Livecall()
         While True
             Await Task.Delay(600)
-            Dim res As FirebaseResponse = Await client.GetAsync("Messages/1")
-            Dim data As Dictionary(Of String, String) = JsonConvert.DeserializeObject(Of Dictionary(Of String, String))(res.Body.ToString())
-            UpdateRTB(data)
+            ' Dim res As FirebaseResponse = Await client.GetAsync("Messages/1")
+            ' Dim data As Dictionary(Of String, String) = JsonConvert.DeserializeObject(Of Dictionary(Of String, String))(res.Body.ToString())
+            ' UpdateRTB(data)
         End While
     End Sub
 
     Private Sub UpdateRTB(ByVal records As Dictionary(Of String, String))
-        TxtboxIsiMessage.Text = ""
-        TxtboxIsiMessage.Text += records.ElementAt(1).Value & ": " + records.ElementAt(0).Value & vbLf
+        ' TxtboxIsiMessage.Text = ""
+        'TxtboxIsiMessage.Text += records.ElementAt(1).Value & ": " + records.ElementAt(0).Value & vbLf
     End Sub
 
 End Class
