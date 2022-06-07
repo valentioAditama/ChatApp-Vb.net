@@ -1,6 +1,8 @@
 ﻿Public Class EditProfile
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-
+        OpenFileDialog1.ShowDialog()
+        PictureBox1.Load(OpenFileDialog1.FileName)
+        PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click

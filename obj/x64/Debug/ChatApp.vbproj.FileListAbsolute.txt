@@ -46,3 +46,53 @@ C:\Users\user\source\repos\ChatApp-Vb.net\bin\x64\Debug\Newtonsoft.Json.xml
 C:\Users\user\source\repos\ChatApp-Vb.net\bin\x64\Debug\System.Net.Http.Extensions.xml
 C:\Users\user\source\repos\ChatApp-Vb.net\bin\x64\Debug\System.Net.Http.Primitives.xml
 C:\Users\user\source\repos\ChatApp-Vb.net\obj\x64\Debug\ChatApp.vbproj.App.config
+D:\visual basic\chattt\ChatApp-Vb.net\bin\x64\Debug\ChatApp.exe.config
+D:\visual basic\chattt\ChatApp-Vb.net\bin\x64\Debug\ChatApp.exe
+D:\visual basic\chattt\ChatApp-Vb.net\bin\x64\Debug\ChatApp.pdb
+D:\visual basic\chattt\ChatApp-Vb.net\bin\x64\Debug\ChatApp.xml
+D:\visual basic\chattt\ChatApp-Vb.net\bin\x64\Debug\FireSharp.dll
+D:\visual basic\chattt\ChatApp-Vb.net\bin\x64\Debug\Microsoft.Threading.Tasks.dll
+D:\visual basic\chattt\ChatApp-Vb.net\bin\x64\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+D:\visual basic\chattt\ChatApp-Vb.net\bin\x64\Debug\Microsoft.Threading.Tasks.Extensions.dll
+D:\visual basic\chattt\ChatApp-Vb.net\bin\x64\Debug\Newtonsoft.Json.dll
+D:\visual basic\chattt\ChatApp-Vb.net\bin\x64\Debug\System.Net.Http.Extensions.dll
+D:\visual basic\chattt\ChatApp-Vb.net\bin\x64\Debug\System.Net.Http.Primitives.dll
+D:\visual basic\chattt\ChatApp-Vb.net\bin\x64\Debug\Google.Protobuf.dll
+D:\visual basic\chattt\ChatApp-Vb.net\bin\x64\Debug\ZstdNet.dll
+D:\visual basic\chattt\ChatApp-Vb.net\bin\x64\Debug\K4os.Compression.LZ4.Streams.dll
+D:\visual basic\chattt\ChatApp-Vb.net\bin\x64\Debug\BouncyCastle.Crypto.dll
+D:\visual basic\chattt\ChatApp-Vb.net\bin\x64\Debug\Ubiety.Dns.Core.dll
+D:\visual basic\chattt\ChatApp-Vb.net\bin\x64\Debug\System.Memory.dll
+D:\visual basic\chattt\ChatApp-Vb.net\bin\x64\Debug\System.Buffers.dll
+D:\visual basic\chattt\ChatApp-Vb.net\bin\x64\Debug\K4os.Compression.LZ4.dll
+D:\visual basic\chattt\ChatApp-Vb.net\bin\x64\Debug\K4os.Hash.xxHash.dll
+D:\visual basic\chattt\ChatApp-Vb.net\bin\x64\Debug\System.Numerics.Vectors.dll
+D:\visual basic\chattt\ChatApp-Vb.net\bin\x64\Debug\Microsoft.Threading.Tasks.xml
+D:\visual basic\chattt\ChatApp-Vb.net\bin\x64\Debug\Microsoft.Threading.Tasks.Extensions.xml
+D:\visual basic\chattt\ChatApp-Vb.net\bin\x64\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+D:\visual basic\chattt\ChatApp-Vb.net\bin\x64\Debug\MySql.Data.xml
+D:\visual basic\chattt\ChatApp-Vb.net\bin\x64\Debug\Newtonsoft.Json.xml
+D:\visual basic\chattt\ChatApp-Vb.net\bin\x64\Debug\System.Net.Http.Extensions.xml
+D:\visual basic\chattt\ChatApp-Vb.net\bin\x64\Debug\System.Net.Http.Primitives.xml
+D:\visual basic\chattt\ChatApp-Vb.net\obj\x64\Debug\ChatApp.vbproj.App.config
+D:\visual basic\chattt\ChatApp-Vb.net\obj\x64\Debug\ChatApp.vbproj.AssemblyReference.cache
+D:\visual basic\chattt\ChatApp-Vb.net\obj\x64\Debug\ChatApp.vbproj.SuggestedBindingRedirects.cache
+D:\visual basic\chattt\ChatApp-Vb.net\obj\x64\Debug\ChatApp.exe.config
+D:\visual basic\chattt\ChatApp-Vb.net\obj\x64\Debug\ChatApp.AboutUs.resources
+D:\visual basic\chattt\ChatApp-Vb.net\obj\x64\Debug\ChatApp.EditProfile.resources
+D:\visual basic\chattt\ChatApp-Vb.net\obj\x64\Debug\ChatApp.FeedBack.resources
+D:\visual basic\chattt\ChatApp-Vb.net\obj\x64\Debug\ChatApp.ForgotPassword.resources
+D:\visual basic\chattt\ChatApp-Vb.net\obj\x64\Debug\ChatApp.Form1.resources
+D:\visual basic\chattt\ChatApp-Vb.net\obj\x64\Debug\ChatApp.Home.resources
+D:\visual basic\chattt\ChatApp-Vb.net\obj\x64\Debug\ChatApp.Loading.resources
+D:\visual basic\chattt\ChatApp-Vb.net\obj\x64\Debug\ChatApp.Login.resources
+D:\visual basic\chattt\ChatApp-Vb.net\obj\x64\Debug\ChatApp.Resources.resources
+D:\visual basic\chattt\ChatApp-Vb.net\obj\x64\Debug\ChatApp.Register.resources
+D:\visual basic\chattt\ChatApp-Vb.net\obj\x64\Debug\ChatApp.Theme.resources
+D:\visual basic\chattt\ChatApp-Vb.net\obj\x64\Debug\ChatApp.vbproj.GenerateResource.cache
+D:\visual basic\chattt\ChatApp-Vb.net\obj\x64\Debug\ChatApp.vbproj.CoreCompileInputs.cache
+D:\visual basic\chattt\ChatApp-Vb.net\obj\x64\Debug\ChatApp.vbproj.CopyComplete
+D:\visual basic\chattt\ChatApp-Vb.net\obj\x64\Debug\ChatApp.exe
+D:\visual basic\chattt\ChatApp-Vb.net\obj\x64\Debug\ChatApp.xml
+D:\visual basic\chattt\ChatApp-Vb.net\obj\x64\Debug\ChatApp.pdb
+C:\Users\user\source\repos\ChatApp-Vb.net\obj\x64\Debug\ChatApp.Theme.resources
