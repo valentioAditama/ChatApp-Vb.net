@@ -35,4 +35,11 @@
         End If
     End Sub
 
+    Private Sub TxtboxFullname_TextChanged(sender As Object, e As EventArgs) Handles TxtboxFullname.TextChanged
+
+    End Sub
+
+    Private Sub FeedBack_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        TxtboxFullname.Text = EditProfile.TxtxboxFullname.Text
+    End Sub
 End Class

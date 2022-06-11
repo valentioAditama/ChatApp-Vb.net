@@ -95,3 +95,4 @@ D:\visual basic\chattt\ChatApp-Vb.net\obj\x64\Debug\ChatApp.vbproj.CopyComplete
 D:\visual basic\chattt\ChatApp-Vb.net\obj\x64\Debug\ChatApp.exe
 D:\visual basic\chattt\ChatApp-Vb.net\obj\x64\Debug\ChatApp.xml
 D:\visual basic\chattt\ChatApp-Vb.net\obj\x64\Debug\ChatApp.pdb
+C:\Users\user\source\repos\ChatApp-Vb.net\obj\x64\Debug\ChatApp.Theme.resources
