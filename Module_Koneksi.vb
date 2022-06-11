@@ -21,6 +21,20 @@ Module Module_Koneksi
         End With
     End Function
 
+    Public Function func_ShowProfile(username As String, password As String)
+        connect()
+        Dim cmd As New MySqlCommand("SELECT * from `users` where username = @1 and password = @2 ", connection)
+        With cmd
+            .Parameters.AddWithValue("@1", username)
+            .Parameters.AddWithValue("@2", password)
+            Dim dt As New DataTable
+            Dim dr As MySqlDataReader = cmd.ExecuteReader
+            dt.Load(dr)
+            Return dt
+        End With
+        Return True
+    End Function
+
     Public Function func_login(username As String, password As String)
         connect()
         Dim cmd As New MySqlCommand("SELECT * from `users` where username = @1 and password = @2", connection)
@@ -85,5 +99,4 @@ Module Module_Koneksi
         End With
         Return True
     End Function
-
 End Module

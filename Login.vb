@@ -47,7 +47,6 @@ Public Class Login
             pass = txtboxPassword.Text
             Dim dt As DataTable = func_login(username, pass)
             If dt.Rows.Count > 0 Then
-                
                 MsgBox("berhasil login!", vbInformation)
                 Me.Dispose()
                 'Loading.Show()

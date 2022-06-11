@@ -26,6 +26,9 @@ Partial Class FeedBack
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.TxtBoxIssue = New System.Windows.Forms.TextBox()
         Me.BtnSubmit = New System.Windows.Forms.Button()
@@ -33,9 +36,6 @@ Partial Class FeedBack
         Me.RdbuttonComment = New System.Windows.Forms.RadioButton()
         Me.RdbuttonBugs = New System.Windows.Forms.RadioButton()
         Me.TxtboxFullname = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
@@ -47,7 +47,6 @@ Partial Class FeedBack
         '
         Me.SplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainer1.Location = New System.Drawing.Point(0, 0)
-        Me.SplitContainer1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.SplitContainer1.Name = "SplitContainer1"
         '
         'SplitContainer1.Panel1
@@ -68,17 +67,16 @@ Partial Class FeedBack
         Me.SplitContainer1.Panel2.Controls.Add(Me.RdbuttonBugs)
         Me.SplitContainer1.Panel2.Controls.Add(Me.TxtboxFullname)
         Me.SplitContainer1.Panel2.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.SplitContainer1.Size = New System.Drawing.Size(1495, 788)
-        Me.SplitContainer1.SplitterDistance = 498
+        Me.SplitContainer1.Size = New System.Drawing.Size(1329, 630)
+        Me.SplitContainer1.SplitterDistance = 442
         Me.SplitContainer1.TabIndex = 0
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.ChatApp.My.Resources.Resources._41111_man_filling_a_survey_with_a_woman_watching_at_5_star_feedback_dialog
-        Me.PictureBox1.Location = New System.Drawing.Point(-249, 1)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.PictureBox1.Location = New System.Drawing.Point(-221, 1)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(989, 784)
+        Me.PictureBox1.Size = New System.Drawing.Size(879, 627)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -89,20 +87,55 @@ Partial Class FeedBack
         Me.Label1.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label1.Font = New System.Drawing.Font("Arial", 20.0!)
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label1.Location = New System.Drawing.Point(58, 370)
+        Me.Label1.Location = New System.Drawing.Point(52, 296)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(403, 45)
+        Me.Label1.Size = New System.Drawing.Size(339, 39)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Share Your FeedBack"
+        '
+        'Label4
+        '
+        Me.Label4.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label4.Location = New System.Drawing.Point(152, 308)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(286, 26)
+        Me.Label4.TabIndex = 31
+        Me.Label4.Text = "Describe your issue or ideas"
+        '
+        'Label2
+        '
+        Me.Label2.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label2.Location = New System.Drawing.Point(152, 212)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(108, 26)
+        Me.Label2.TabIndex = 30
+        Me.Label2.Text = "Fullname "
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Arial", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label3.Location = New System.Drawing.Point(288, 130)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(339, 39)
+        Me.Label3.TabIndex = 29
+        Me.Label3.Text = "Share Your FeedBack"
         '
         'LinkLabel1
         '
         Me.LinkLabel1.AutoSize = True
         Me.LinkLabel1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.LinkLabel1.Location = New System.Drawing.Point(782, 528)
+        Me.LinkLabel1.Location = New System.Drawing.Point(695, 422)
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(102, 29)
+        Me.LinkLabel1.Size = New System.Drawing.Size(83, 25)
         Me.LinkLabel1.TabIndex = 28
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Kembali"
@@ -115,10 +148,9 @@ Partial Class FeedBack
         Me.TxtBoxIssue.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.TxtBoxIssue.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
         Me.TxtBoxIssue.ForeColor = System.Drawing.SystemColors.InfoText
-        Me.TxtBoxIssue.Location = New System.Drawing.Point(174, 429)
-        Me.TxtBoxIssue.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.TxtBoxIssue.Location = New System.Drawing.Point(155, 343)
         Me.TxtBoxIssue.Name = "TxtBoxIssue"
-        Me.TxtBoxIssue.Size = New System.Drawing.Size(701, 41)
+        Me.TxtBoxIssue.Size = New System.Drawing.Size(624, 36)
         Me.TxtBoxIssue.TabIndex = 27
         '
         'BtnSubmit
@@ -132,10 +164,9 @@ Partial Class FeedBack
         Me.BtnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BtnSubmit.Font = New System.Drawing.Font("Bahnschrift", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnSubmit.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.BtnSubmit.Location = New System.Drawing.Point(176, 568)
-        Me.BtnSubmit.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.BtnSubmit.Location = New System.Drawing.Point(156, 454)
         Me.BtnSubmit.Name = "BtnSubmit"
-        Me.BtnSubmit.Size = New System.Drawing.Size(701, 74)
+        Me.BtnSubmit.Size = New System.Drawing.Size(623, 59)
         Me.BtnSubmit.TabIndex = 25
         Me.BtnSubmit.Text = "Submit"
         Me.BtnSubmit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
@@ -145,10 +176,9 @@ Partial Class FeedBack
         '
         Me.RdbuttonOther.AutoSize = True
         Me.RdbuttonOther.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.RdbuttonOther.Location = New System.Drawing.Point(430, 488)
-        Me.RdbuttonOther.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.RdbuttonOther.Location = New System.Drawing.Point(382, 390)
         Me.RdbuttonOther.Name = "RdbuttonOther"
-        Me.RdbuttonOther.Size = New System.Drawing.Size(74, 24)
+        Me.RdbuttonOther.Size = New System.Drawing.Size(65, 21)
         Me.RdbuttonOther.TabIndex = 24
         Me.RdbuttonOther.TabStop = True
         Me.RdbuttonOther.Text = "Other"
@@ -158,10 +188,9 @@ Partial Class FeedBack
         '
         Me.RdbuttonComment.AutoSize = True
         Me.RdbuttonComment.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.RdbuttonComment.Location = New System.Drawing.Point(287, 488)
-        Me.RdbuttonComment.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.RdbuttonComment.Location = New System.Drawing.Point(255, 390)
         Me.RdbuttonComment.Name = "RdbuttonComment"
-        Me.RdbuttonComment.Size = New System.Drawing.Size(100, 24)
+        Me.RdbuttonComment.Size = New System.Drawing.Size(86, 21)
         Me.RdbuttonComment.TabIndex = 23
         Me.RdbuttonComment.TabStop = True
         Me.RdbuttonComment.Text = "comment"
@@ -171,10 +200,9 @@ Partial Class FeedBack
         '
         Me.RdbuttonBugs.AutoSize = True
         Me.RdbuttonBugs.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.RdbuttonBugs.Location = New System.Drawing.Point(176, 488)
-        Me.RdbuttonBugs.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.RdbuttonBugs.Location = New System.Drawing.Point(156, 390)
         Me.RdbuttonBugs.Name = "RdbuttonBugs"
-        Me.RdbuttonBugs.Size = New System.Drawing.Size(71, 24)
+        Me.RdbuttonBugs.Size = New System.Drawing.Size(61, 21)
         Me.RdbuttonBugs.TabIndex = 22
         Me.RdbuttonBugs.TabStop = True
         Me.RdbuttonBugs.Text = "Bugs"
@@ -188,57 +216,20 @@ Partial Class FeedBack
         Me.TxtboxFullname.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.TxtboxFullname.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
         Me.TxtboxFullname.ForeColor = System.Drawing.SystemColors.InfoText
-        Me.TxtboxFullname.Location = New System.Drawing.Point(174, 312)
-        Me.TxtboxFullname.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.TxtboxFullname.Location = New System.Drawing.Point(155, 250)
         Me.TxtboxFullname.Name = "TxtboxFullname"
-        Me.TxtboxFullname.Size = New System.Drawing.Size(701, 41)
+        Me.TxtboxFullname.Size = New System.Drawing.Size(624, 36)
         Me.TxtboxFullname.TabIndex = 21
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Arial", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label3.Location = New System.Drawing.Point(324, 162)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(403, 45)
-        Me.Label3.TabIndex = 29
-        Me.Label3.Text = "Share Your FeedBack"
-        '
-        'Label2
-        '
-        Me.Label2.AccessibleRole = System.Windows.Forms.AccessibleRole.None
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
-        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label2.Location = New System.Drawing.Point(171, 265)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(126, 30)
-        Me.Label2.TabIndex = 30
-        Me.Label2.Text = "Fullname "
-        '
-        'Label4
-        '
-        Me.Label4.AccessibleRole = System.Windows.Forms.AccessibleRole.None
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
-        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label4.Location = New System.Drawing.Point(171, 385)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(337, 30)
-        Me.Label4.TabIndex = 31
-        Me.Label4.Text = "Describe your issue or ideas"
         '
         'FeedBack
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ClientSize = New System.Drawing.Size(1495, 788)
+        Me.ClientSize = New System.Drawing.Size(1329, 630)
         Me.Controls.Add(Me.SplitContainer1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "FeedBack"
         Me.Text = "FeedBack"
         Me.SplitContainer1.Panel1.ResumeLayout(False)

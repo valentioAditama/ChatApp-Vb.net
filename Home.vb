@@ -3,6 +3,7 @@ Imports FireSharp.Response
 Imports FireSharp.Interfaces
 Imports Newtonsoft.Json
 Imports MySql.Data.MySqlClient
+Imports System.Net
 Imports System.Net.Sockets
 Imports System.Text
 
@@ -21,34 +22,55 @@ Public Class Home
         }
 
     Private client As IFirebaseClient
+
+    Dim _client As TcpClient
     Private Sub Home_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        readData = "conneced to Chat server"
-        msg()
-        clientSocket.Connect("127.0.0.1", 8888)
-        serverStream = clientSocket.GetStream
+        Try
+            Dim ip As String = "127.0.0.1"
+            Dim port As Integer = 5432
 
-        Dim outstream As Byte() = System.Text.Encoding.ASCII.GetBytes(TxtboxMessage.Text + "$")
-        serverStream.Write(outstream, 0, outstream.Length)
-        serverStream.Flush()
+            _client = New TcpClient(ip, port)
 
-        Dim ctThread As Threading.Thread = New Threading.Thread(AddressOf getMessage)
-        ctThread.Start()
+            CheckForIllegalCrossThreadCalls = False
+
+            Threading.ThreadPool.QueueUserWorkItem(AddressOf ReceiveMessage)
+
+            AcceptButton = BtnSendMessage
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
     End Sub
 
-    Private Sub getMessage()
-        For infiniteCounter = 1 To 2
-            infiniteCounter = 1
-            serverStream = clientSocket.GetStream
+    Private Sub ReceiveMessage(state As Object)
+        Try
+            While True
+                Dim connection As New MySqlConnection("Datasource=localhost;port=3306;username=root;password=;database=chatapp")
+                connection.Open()
 
-            Dim buffsize As Integer
-            Dim instream(10024) As Byte
-            buffsize = clientSocket.ReceiveBufferSize
-            serverStream.Read(instream, 0, buffsize)
+                Dim room As String = "1"
+                Dim time As Date
 
-            Dim returndata As String = System.Text.Encoding.ASCII.GetString(instream)
-            readData = "" + returndata
-            msg()
-        Next
+                Dim cmd As New MySqlCommand("SELECT * FROM chat WHERE room = @1 ORDER BY id DESC LIMIT 1", connection)
+
+                cmd.Parameters.AddWithValue("@1", room)
+
+                Dim myReader As MySqlDataReader = cmd.ExecuteReader()
+                Dim ns As NetworkStream = _client.GetStream()
+
+                Dim toReceive(100000) As Byte
+                ns.Read(toReceive, 0, toReceive.Length)
+                Dim txt As String = Encoding.ASCII.GetString(toReceive)
+                If TxtboxIsiMessage.TextLength > 0 Then
+                    While myReader.Read
+                        TxtboxIsiMessage.Text &= myReader.GetValue(2) + ": " + txt & vbNewLine + vbNewLine
+                    End While
+                Else
+                    TxtboxIsiMessage.Text = txt
+                End If
+            End While
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
     End Sub
 
     Private Sub editProfile_Click(sender As Object, e As EventArgs)
@@ -82,48 +104,65 @@ Public Class Home
     Private Sub editProfile_Click_3(sender As Object, e As EventArgs) Handles btnEditProfile.Click
         EditProfile.Show()
         Me.Hide()
+
+        Dim connection As New MySqlConnection("Datasource=localhost;port=3306;username=root;password=;database=chatapp")
+        connection.Open()
+
+        Dim cmd As New MySqlCommand("SELECT * from `users` where username = @1 and password =@2 ", connection)
+
+        Dim username As String = EditProfile.TxtxboxUsername.Text
+        Dim password As String = EditProfile.TxtxboxPassword.Text
+
+        With cmd
+            .Parameters.AddWithValue("@1", username)
+            .Parameters.AddWithValue("@2", password)
+        End With
+
+        Dim myreader As MySqlDataReader
+        myreader = cmd.ExecuteReader()
+
+        myreader.Read()
+
+        EditProfile.txtboxId.Text = myreader("id")
+        EditProfile.TxtxboxEmail.Text = myreader("email")
+        EditProfile.TxtxboxFullname.Text = myreader("fullname")
     End Sub
 
     Private Sub BtnSendMessage_Click(sender As Object, e As EventArgs) Handles BtnSendMessage.Click
         If TxtboxMessage.Text = "" Then
             MsgBox("Field text tidak boleh Kosong")
         Else
-            Dim outStream As Byte() = System.Text.Encoding.ASCII.GetBytes(TxtboxIsiMessage.Text + "$")
-            serverStream.Write(outStream, 0, outStream.Length)
-            serverStream.Flush()
-            Dim connection As New MySqlConnection("Datasource=localhost;port=3306;username=root;password=;database=chatapp")
-            connection.Open()
+            Try
+                Dim connection As New MySqlConnection("Datasource=localhost;port=3306;username=root;password=;database=chatapp")
+                connection.Open()
 
-            Dim room As String = "1"
-            Dim time As Date
+                Dim room As String = "1"
+                Dim time As Date
 
-            func_SendMessage(room, Label1.Text, TxtboxMessage.Text, time)
+                func_SendMessage(room, Label1.Text, TxtboxMessage.Text, time)
 
-            Dim cmd As New MySqlCommand("SELECT * FROM chat WHERE room = @1 ORDER BY id DESC LIMIT 1", connection)
+                Dim ns As NetworkStream = _client.GetStream()
 
-            cmd.Parameters.AddWithValue("@1", room)
+                ns.Write(Encoding.ASCII.GetBytes(TxtboxMessage.Text), 0, TxtboxMessage.Text.Length)
+                'TxtboxIsiMessage.Text += TxtboxMessage.Text + vbNewLine
+                TxtboxMessage.Text = "" + vbNewLine
 
-            Dim myReader As MySqlDataReader = cmd.ExecuteReader()
+                Dim cmd As New MySqlCommand("SELECT * FROM chat WHERE room = @1 ORDER BY id DESC LIMIT 1", connection)
 
-            While myReader.Read
-                TxtboxIsiMessage.Text += myReader.GetValue(3).ToString() + vbNewLine
-            End While
+                cmd.Parameters.AddWithValue("@1", room)
 
-            TxtboxMessage.Text = ""
+                Dim myReader As MySqlDataReader = cmd.ExecuteReader()
 
-            TxtboxIsiMessage.Refresh()
+                While myReader.Read
+                    TxtboxIsiMessage.Text += myReader.GetValue(2) + ": " + myReader.GetValue(3).ToString() + vbNewLine + vbNewLine
+                End While
 
-            connection.Close()
+                TxtboxMessage.Text = ""
 
-            Livecall()
-        End If
-    End Sub
-
-    Private Sub msg()
-        If Me.InvokeRequired Then
-            Me.Invoke(New MethodInvoker(AddressOf msg))
-        Else
-            TxtboxIsiMessage.Text = TxtboxIsiMessage + Environment.NewLine + " >>" + readData
+                connection.Close()
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            End Try
         End If
     End Sub
 
@@ -145,5 +184,37 @@ Public Class Home
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
         Theme.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub TxtboxIsiMessage_TextChanged(sender As Object, e As EventArgs) Handles TxtboxIsiMessage.TextChanged
+
+    End Sub
+
+    Private Sub TxtboxMessage_TextChanged(sender As Object, e As EventArgs) Handles TxtboxMessage.TextChanged
+
+    End Sub
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        Dim connection As New MySqlConnection("Datasource=localhost;port=3306;username=root;password=;database=chatapp")
+        connection.Open()
+
+        Dim cmd As New MySqlCommand("SELECT * from `users` where username = @1 and password =@2 ", connection)
+
+        Dim username As String = EditProfile.TxtxboxUsername.Text
+        Dim password As String = EditProfile.TxtxboxPassword.Text
+
+        With cmd
+            .Parameters.AddWithValue("@1", username)
+            .Parameters.AddWithValue("@2", password)
+        End With
+
+        Dim myreader As MySqlDataReader
+        myreader = cmd.ExecuteReader()
+
+        myreader.Read()
+
+        EditProfile.txtboxId.Text = myreader("id")
+        EditProfile.TxtxboxEmail.Text = myreader("email")
+        EditProfile.TxtxboxFullname.Text = myreader("fullname")
     End Sub
 End Class
