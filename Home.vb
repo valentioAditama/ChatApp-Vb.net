@@ -137,9 +137,8 @@ Public Class Home
                 connection.Open()
 
                 Dim room As String = "1"
-                Dim time As Date
 
-                func_SendMessage(room, Label1.Text, TxtboxMessage.Text, time)
+                func_SendMessage(room, Label1.Text, TxtboxMessage.Text)
 
                 Dim ns As NetworkStream = _client.GetStream()
 
