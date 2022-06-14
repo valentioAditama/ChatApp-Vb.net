@@ -40,6 +40,7 @@ Partial Class EditProfile
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.txtboxId = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.BtnGantiImage = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -254,12 +255,32 @@ Partial Class EditProfile
         Me.Label7.TabIndex = 42
         Me.Label7.Text = "Id users"
         '
+        'BtnGantiImage
+        '
+        Me.BtnGantiImage.AccessibleRole = System.Windows.Forms.AccessibleRole.ButtonMenu
+        Me.BtnGantiImage.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnGantiImage.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BtnGantiImage.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnGantiImage.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BtnGantiImage.Font = New System.Drawing.Font("Bahnschrift", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnGantiImage.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnGantiImage.Location = New System.Drawing.Point(116, 370)
+        Me.BtnGantiImage.Name = "BtnGantiImage"
+        Me.BtnGantiImage.Size = New System.Drawing.Size(136, 45)
+        Me.BtnGantiImage.TabIndex = 43
+        Me.BtnGantiImage.Text = "Ganti Image"
+        Me.BtnGantiImage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.BtnGantiImage.UseVisualStyleBackColor = False
+        '
         'EditProfile
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.ClientSize = New System.Drawing.Size(1329, 630)
+        Me.Controls.Add(Me.BtnGantiImage)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.txtboxId)
         Me.Controls.Add(Me.ShowPassword)
@@ -303,4 +324,5 @@ Partial Class EditProfile
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents txtboxId As TextBox
     Friend WithEvents Label7 As Label
+    Friend WithEvents BtnGantiImage As Button
 End Class
