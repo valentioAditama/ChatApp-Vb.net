@@ -43,4 +43,16 @@
         Home.Show()
         Me.Hide()
     End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Dim bg As New OpenFileDialog
+        If bg.ShowDialog = Windows.Forms.DialogResult.OK Then
+            AboutUs.BackgroundImage = Image.FromFile(bg.FileName)
+            FeedBack.BackgroundImage = Image.FromFile(bg.FileName)
+            EditProfile.BackgroundImage = Image.FromFile(bg.FileName)
+            Loading.BackgroundImage = Image.FromFile(bg.FileName)
+            Login.BackgroundImage = Image.FromFile(bg.FileName)
+            Me.BackgroundImage = Image.FromFile(bg.FileName)
+        End If
+    End Sub
 End Class
