@@ -27,7 +27,7 @@ Public Class Home
     Private Sub Home_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
             Dim ip As String = "127.0.0.1"
-            Dim port As Integer = 5432
+            Dim port As Integer = 1234
 
             _client = New TcpClient(ip, port)
 
