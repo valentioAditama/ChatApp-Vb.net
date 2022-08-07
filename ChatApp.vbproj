@@ -70,6 +70,9 @@
     <PlatformTarget>x64</PlatformTarget>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>chat__1__mjP_icon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="FireSharp, Version=2.0.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\FireSharp.2.0.4\lib\portable-net45+sl5+wp8+win8\FireSharp.dll</HintPath>
@@ -328,6 +331,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\41111-man-filling-a-survey-with-a-woman-watching-at-5-star-feedback-dialog.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="chat__1__mjP_icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <Import Project="packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
